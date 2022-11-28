@@ -1,12 +1,21 @@
+@import './resets/normalize';
 @import "globals";
 @import "./pages/home";
 
 @import 'header';
-@import './resets/normalize';
+@import 'footer';
+html, * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 body{
     min-height: 320px;
     font-family:$primary-font-family;
+    font-size: 0.89rem;
 }
+
+
 h1,h2,h3,h4,h5,h6{
     margin:0px;
     font-family: 'Orbitron';

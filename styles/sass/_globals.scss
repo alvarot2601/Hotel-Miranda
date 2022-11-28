@@ -21,7 +21,7 @@ $grey-color: #3c3d3d;
   background-color: $secondary-color;
 }
 @mixin general-title {
-  letter-spacing: -1.2px;
+  //letter-spacing: -1.2px;
   line-height: 87%;
 }
 @mixin general-section(
