@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&family=Space+Mono&display=swap");
+@font-face {
+  font-family: "Orbitron", sans-serif;
+  font-family: "Space Mono", monospace;
+}
+$primary-font-family: "Space Mono", monospace;
+$primary-color: #003566;
+$secondary-color: #3f7fba;
+$third-color: #001329;
+$fourth-color: #ebebeb;
+$grey-color: #3c3d3d;
+//////mixins
+@mixin general-button {
+  letter-spacing: 2.8px;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 15px;
+  padding: 22px 46px;
+  color: white;
+  border: none;
+  background-color: $secondary-color;
+}
+@mixin general-title {
+  letter-spacing: -1.2px;
+  line-height: 87%;
+}
+@mixin general-section(
+  $background-color,
+  $padding-top: 20px,
+  $padding-bottom: 76px,
+  $padding-right: 20px,
+  $padding-left: 20px
+) {
+  display: flex;
+  flex-direction: column;
+  padding: $padding-top $padding-right $padding-bottom $padding-left;
+  background-color: $background-color;
+  //text-align: center;
+}
