@@ -1,0 +1,64 @@
+.section{
+    &__icon-container{
+        margin-top:51px;
+        @include flex(row, 20px);
+        flex-wrap: wrap;
+    }
+    &__icon-subcontainer{
+        display: flex;
+        gap:12px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width:clamp(130px, 40.6vw, 158px);
+        height:clamp(130px, 40.6vw, 158px);
+        border:1px solid black;
+    }
+    &__icon-subcontainer--dark{
+        border:1px solid blue;
+    }
+    &__restaurant-container{
+        margin-top:50px;
+        padding:20px;
+        display: flex;
+        flex-direction: column;
+        gap:32px;
+        h3{
+            margin:22px 0px;
+            font-size: clamp(36px, 11.25vw, 72px);
+        }
+        img{
+            min-height: 14.5rem;
+        }
+    }
+    &__restaurant-subcontainer{
+        p{
+            margin-top:26px;
+            margin-bottom:16px;
+        }
+    }
+    &__fun-facts-container{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap:16px;
+    }
+    &__fun-fact-container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding:25px 20px;
+        padding-left:clamp(0px, calc((6.25vw - 20px)*10) , 20px);
+        padding-right:clamp(0px, calc((6.25vw - 20px)*10) , 20px);
+    }
+    &__features-container{
+        display: flex;
+        flex-direction: column;
+        gap:0px;
+    }
+}
+.section--8{
+    @include general-section($fourth-color, 60px, 60px, 20px, 20px);
+    
+}

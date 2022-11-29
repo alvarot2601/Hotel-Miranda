@@ -1,6 +1,4 @@
-section{
-    color:white;
-}
+
 button{
     @include general-button;
 }
@@ -23,51 +21,240 @@ button{
     color: $secondary-color;
     font-family: 'Orbitron';
     font-weight: 700;
-    margin-bottom:32px;
+    //margin-bottom:32px;
 }
 .room-icon{
     width:20px;
     height:20px;
 }
-.pagination-container{
-    display: flex;
-    justify-content: center;
-    gap:8px;
-    div{
-        width: 8px;
-        height: 8px;
-        background-color: $secondary-color;
+
+
+.section{
+    @include general-section($primary-color, 75px, 76px);
+    &__little-title{
+        font-size: clamp(11.5px, 0.72rem, 14px);
+        line-height: 127%;
+        letter-spacing: 2.8px;
+        color: $secondary-color;
+        font-family: 'Orbitron';
+        font-weight: 700;
+        margin-bottom:32px;
+        text-align: center;
+    }
+    &__title{
+        font-size:clamp(30px, 11.875vw, 80px);
+    }
+    &__little-title--white{
+        color: #ffffff;
+    }
+    &__medium-title{
+        font-family: 'Orbitron';
+        font-size: clamp(24px, 7.5vw, 50px);
+    }
+    &__btn{
+        border:1px solid $primary-color;
+        background-color:$secondary-color;
+        font-size: 0.77875rem;
+        margin-top:24px;
+        border:none;
+    }
+    &__btn--outlined{
+        background-color: transparent;
+        border:1px solid white;
+    }
+    
+    &__article{
+        //text-align: center;
+    }
+    &__target-container{
+        padding:60px 32px 0px 32px;
+        display: flex;
+        flex-direction: column;
+        gap:45px;
+    }
+    &__target{
+        height: 18.75rem;
+        border: 1px solid blue;
+    }
+    &__target-2{
+        padding: 50px 35px 38px 35px;
+        position: relative;  
+    }
+    &__target-2-dark{
+        color:white;
+        background-color: $third-color; 
+    }
+    &__icon-people{
+        width: 68px;
+        height: 50px;
+        margin: auto;
+        margin-bottom:25px;
+        position: inherit;
+        z-index: 999;
+    }
+    &__icon-people-transparent{
+        position: absolute;
+        top:50px;
+        left:32%;
+        width: 144px;
+        height: 106px;
+    }
+    &__icon-luxury-room{
+        width: 57px;
+        height: 50px;
+        margin: auto;
+        margin-bottom:25px;
+        position: inherit;
+        z-index: 999;
+    }
+    &__span, &__p{
+        position: inherit;
+    }
+    &__span-target{
+        position: inherit;
+        margin-bottom: 21px;
+        z-index: 1;
+        font-size: clamp(20px, 6.3vw, 30px);
+        font-weight: 400;
+        font-family: 'Orbitron';
+    }
+    &__p-target{
+        margin-top:21px;
+        font-size: clamp(12px, 3.89vw, 14px);
+    }
+    &__icon-list{
+        height:40px;
+        display: flex;
+        justify-content: space-between;
+        margin:24px 60px 10px 60px;
+    }
+    
+    &__room-container{
+        padding:20px;
+    }
+    &__room-description{
+        margin:12px 0px;
+        line-height: 146%;
+        color: $grey-color;
+    }
+    &__room-price{
+        filter: drop-shadow(0 0 0.75rem $third-color);
+        color:$third-color;
+        font-weight: bolder;
+        font-size: clamp(20px, 6vw, 50px);
+    }
+    &__core-features{
+        text-align: left;
+        background-color: $fourth-color;
+        position: relative;
+        min-height: 350px;
+        padding: 81px 0px 4px 0px;
+        box-sizing: border-box;
+    }
+    &__core-features::before{
+        content: url('../../assets/icons/01.svg');
+        position: absolute;
+        top:20px;
+        right: 0px;
+    }
+    &__article--core{
+        margin-bottom:60px;
+        .medium-title{
+            margin-bottom:28px;
+        }
+        img{
+            width: 70px;
+            height: 70px;
+        }
+    }
+    button:hover{
+        cursor: pointer;
+        background-color: transparent;
+        border:1px solid $secondary-color;
+        color: $secondary-color;
+    }
+    .section__article--food{
+        padding: 115px 0px 0px 0px;
+        text-align: left;
+        position: relative;
+        .section__menu-container{
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            margin-bottom:30px;
+        }
+        img{
+            width: clamp(110px, 37.5vw, 130px);
+            height: clamp(110px, 37.5vw, 130px);
+            object-fit: cover;
+        }
+        span{
+            font-family: 'Orbitron';
+            font-size: clamp(18px, 5.625vw, 30px);
+        }
+    }
+    &__food-container{
+        display: flex;
+        gap:29px;
+        justify-content: flex-end;
+        p{
+            margin-top:12px;
+        }   
+    }
+    &__slider-btn-container{
+        text-align: right;
+    }
+    &__slider-btn{
+        padding: 10px;
         border-radius: 100%;
     }
+    &__slider-btn--left{
+        margin-left: 15px;
+    }
+    &__slider-btn--right{
+        margin-right: 15px;
+    }
+    &__pagination-container{
+        display: flex;
+        justify-content: center;
+        gap:8px;
+        div{
+            width: 8px;
+            height: 8px;
+            background-color: $secondary-color;
+            border-radius: 100%;
+        }
+        margin-top: 15px;
+    }
+    &__span-3rem{
+        font-size:3rem;
+        font-family: 'Orbitron';
+    }
+    &__slider{
+        margin-top:24px;
+        img{
+            width:100%;
+        }
+    }
 }
-.food-container{
-    display: flex;
-    align-items: center;
-    gap:29px;        
-}
+
+
 .section--1{
-  @include general-section($primary-color, 75px, 76px);
+  //@include general-section($primary-color, 75px, 76px);
   gap: 24px;
   h1{
     @include general-title;
-    font-size: clamp(45px, 14.0625vw, 120px);
-    margin-bottom: 16px;
-    
+    font-size: clamp(45px, 3.125rem, 80px);
+    line-height: 60px;
+    animation: title-right 2s ease 0s 1 normal backwards;
   }
-  button {
-    //max-width: 60%;
-    border:1px solid $primary-color;
-    background-color:$secondary-color;
-  }
-  button:nth-of-type(2){
-    background-color: transparent;
-    border:1px solid white;
+  .section__little-title{
+    text-align: left;
   }
 }
-section:nth-child(2){
+.section--2{
     background-color:$third-color;
     padding: 36px 20px;
-    //margin-bottom:60px;
     label{
         font-weight: bold;
     }
@@ -92,128 +279,31 @@ section:nth-child(2){
         background-color: $secondary-color;
     }
 }
-section:nth-child(3){
-    @include general-section($fourth-color, 20px, 60px);
+.section--3{
+    @include general-section($fourth-color, 38px, 60px);
     color: $third-color;
-    article:first-child{
-        margin-bottom:60px;
-        p{
-            color:$grey-color;
-        }
-        div.container{
-        }
-    }
-    article:nth-child(2), article:nth-child(3){
-        padding:0px 12px;
-        text-align: center;
-        div{
-            min-height: 300px;
-        }
-        div:first-child{
-            background-color: #E4E4E4;
-        }
-        div:nth-child(2){
-            padding: 54px 35px 38px 35px;
-            box-shadow: 0px 1px 10px rgba(34, 34, 34, 0.05);
-            position: relative;
-            background-color: #ffffff;
-            box-sizing: border-box;
-        }
-        span{
-            position: inherit;
-            margin-bottom: 21px;
-            z-index: 1;
-        } 
-    }
-    article:nth-child(2){
-        img:first-child{
-            width: 68px;
-            height: 50px;
-            margin: auto;
-            margin-bottom:25px;
-            position: inherit;
-            z-index: 999;
-        }
-        img:nth-child(2){
-            position: absolute;
-            top:50px;
-            left:44%;
-            width: 144px;
-            height: 106px;
-        }
-    }
-    article:nth-child(3){
-        div:nth-child(2){
-            color:white;
-        background-color: $third-color;
-        }
-        img{
-            width: 57px;
-            height: 50px;
-            margin: auto;
-            margin-bottom:25px;
-            position: inherit;
-            z-index: 999;
-        }
+    text-align: left;
+    h2{
+        margin: 32px 0px 16px 0px;
     }
 }
-section:nth-child(4){
+.section--4{
     color:$third-color;
-    @include general-section($fourth-color, 0px, 20px);
+    @include general-section($fourth-color, 0px, 20px, 0px, 0px);
     text-align: center;
-    span{
-
-    }
     h3{
         margin-top: 24px;
     }
-    button{
-        padding: 10px;
-        border-radius: 100%;
-    }
-    div:nth-of-type(1){
-        span{
-            
-        }
-        div:nth-of-type(1){
-            height:40px;
-            display: flex;
-            justify-content: space-between;
-        }
-        div:nth-of-type(2){
-            min-height:240px;
-            background-color: grey;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: space-between;     
-        }  
-    }
-    div:nth-of-type(2){
-        padding:19px 0px;
-        
-        p:first-child{
-            font-family: 'Orbitron';
-            //cambiar max
-            font-size: clamp(24px, 7.5vw, 50px)
-        }
-        p:nth-of-type(2){
-            line-height: 146%;
-            color: $grey-color;
-        }
-        span{
-            filter: drop-shadow(0 0 0.75rem $third-color);
-            color:$third-color;
-            font-weight: bolder;
-        }
-        span:nth-of-type(1){
-            
-            //cambiar max
-            font-size: clamp(20px, 6vw, 50px);
-        }
+    section__slider{
+        min-height:240px;
+        background-color: grey;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;    
     }
 }
-section:nth-child(5){
+.section--5{
     color:#ffffff;
     @include general-section($third-color, 64px, 48px);
     text-align: left;
@@ -221,92 +311,57 @@ section:nth-child(5){
         margin:0px;
     }
     video{
-        min-height: 270px;
-        background-color: grey;
-        margin-bottom:36px;
+        
+        margin:32px 0px 36px 0px;
     }
 }
 
-section:nth-child(6){
+.section--6{
     color: $third-color;
-    @include general-section($fourth-color, 60px, 48px, 0px, 0px);
+    @include general-section($fourth-color, 60px, 48px, 24px, 24px);
     text-align: center;
     h5{
         margin-bottom: 32px;
+        margin-top:24px;
     }
-    article:first-child{
-        margin-bottom:60px;
-        > div:nth-of-type(1){
-            text-align: left;
-            background-color: $fourth-color;
-            position: relative;
-            min-height: 350px;
-            padding: 81px 32px 4px 35px;
-            box-sizing: border-box;
-        }
-        > div:nth-of-type(1)::before{
-            content: url('../../assets/icons/01.svg');
-            position: absolute;
-            top:20px;
-            right: 32px;
-        }
-        .medium-title{
-            margin-bottom:28px;
-        }
-        p:nth-of-type(2){
-        }
-        img{
-        width: 70px;
-        height: 70px;
-        }
+    .section__medium-title{
+        margin:37px 0px 28px 0px;
     }
-    article:nth-of-type(2){
-        padding: 115px 20px 0px 20px;
-        text-align: left;
-        position: relative;
-        > div:first-child{
-            display: flex;
-            flex-direction: column;
-            gap: 16px;
-        }
+    .section__title{
+        margin-bottom:32px;
+    }
+    .section__slider{
+        margin-top:60px;
         img{
-            width: 120px;
-            height: 120px;
-            object-fit: contain;
-        }
-        span{
-            font-family: 'Orbitron';
-            font-size: clamp(18px, 5.625vw, 30px);
-        }
-        div:nth-of-type(2){
-            display: flex;
-            gap: 16px;
-            justify-content: flex-end;
-        }
-        button{
-            width:36px;
-            height:36px;
-            padding:9px;
-            border-radius: 100%;
-        }
-        button:hover{
-            cursor: pointer;
-            background-color: transparent;
-            border:1px solid $secondary-color;
-            color: $secondary-color;
+            width:100%;
+            margin-bottom:24px;
         }
     }
     article:nth-of-type(2)::before{
         content: url('../../assets/icons/donut.svg');
         position: absolute;
         top:0;
-        right:0;
+        right:-20;
         width:114px;
         height: 114px;
     }
+   
 }
-section:nth-of-type(7)
+
+.section--7
 {
+    color:#ffffff;
     @include general-section($third-color, 48px, 48px, 48px, 48px);
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap:60px;
+    img{
+        margin:auto;
+        margin-bottom: 16px;
+    }
+    p{
+        font-weight: 600;
+        font-size: clamp(14px, 4.45vw, 30px);
+    }
 }

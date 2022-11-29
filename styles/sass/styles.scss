@@ -1,0 +1,142 @@
+@import '../resets/normalize';
+@import "globals";
+@import "./pages/home";
+@import "./pages/about";
+@import 'header';
+@import 'footer';
+html, * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    min-height: 320px;
+    font-family:$primary-font-family;
+    font-size: 0.89rem;
+}
+
+.orbitron{
+	font-family: 'Orbitron';
+}
+h1,h2,h3,h4,h5,h6{
+    margin:20px 0px;
+    font-family: 'Orbitron';
+}
+h1{
+	font-weight: 900;
+}
+h2{
+	font-weight: 800;
+}
+h3{
+	font-weight: 700;
+}
+h4{
+	font-weight: 600;
+}
+h5{
+	font-weight: 500;
+}
+h6{
+	font-weight: 400;
+}
+img{
+    display: block;
+}
+ul{
+    list-style-type: none;
+    margin:0;
+    padding:0;
+}
+.bg-dark{
+	background-color:$third-color;
+	color:#ffffff;
+}
+
+//
+@keyframes nav {
+	0% {
+		animation-timing-function: ease-in;
+		opacity: 0;
+		transform: translateY(-250px);
+	}
+
+	38% {
+		animation-timing-function: ease-out;
+		opacity: 1;
+		transform: translateY(0);
+	}
+
+	55% {
+		animation-timing-function: ease-in;
+		transform: translateY(-65px);
+	}
+
+	72% {
+		animation-timing-function: ease-out;
+		transform: translateY(0);
+	}
+
+	81% {
+		animation-timing-function: ease-in;
+		transform: translateY(-28px);
+	}
+
+	90% {
+		animation-timing-function: ease-out;
+		transform: translateY(0);
+	}
+
+	95% {
+		animation-timing-function: ease-in;
+		transform: translateY(-8px);
+	}
+
+	100% {
+		animation-timing-function: ease-out;
+		transform: translateY(0);
+	}
+}
+@keyframes title-right {
+	0% {
+		animation-timing-function: ease-in;
+		opacity: 0;
+		transform: translateX(-250px);
+	}
+
+	38% {
+		animation-timing-function: ease-out;
+		opacity: 1;
+		transform: translateX(0);
+	}
+
+	55% {
+		animation-timing-function: ease-in;
+		transform: translateX(-68px);
+	}
+
+	72% {
+		animation-timing-function: ease-out;
+		transform: translateX(0);
+	}
+
+	81% {
+		animation-timing-function: ease-in;
+		transform: translateX(-28px);
+	}
+
+	90% {
+		animation-timing-function: ease-out;
+		transform: translateX(0);
+	}
+
+	95% {
+		animation-timing-function: ease-in;
+		transform: translateX(-8px);
+	}
+
+	100% {
+		animation-timing-function: ease-out;
+		transform: translateX(0);
+	}
+}
