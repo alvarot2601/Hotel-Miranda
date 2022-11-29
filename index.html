@@ -4,6 +4,12 @@
   <title>Hotel Miranda</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="./styles/css/styles.css" />
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 </head>
 
 <body>
@@ -16,8 +22,8 @@
           <img id="close-menu" src="assets/icons/x.svg" alt="" class="inactive" />
         </li>
         <li class="header__logo-container">
-          <img src="assets/icons/H.svg" alt="" />
-          <img src="assets/icons/wordmark.svg" alt="Logo of the website" />
+          <img class="header__h" src="assets/icons/H.svg" alt="" />
+          <img class="header__logo" src="assets/icons/wordmark.svg" alt="Logo of the website" />
         </li>
         <li class="header__li">
           <img class="header__icon header__icon--2" src="assets/icons/user-icon.svg" alt="User icon" />
@@ -46,7 +52,7 @@
     <section class="section section--1">
       <span class="section__little-title section__little-title--white">The ULTIMATE LUXURY EXPERIENCE</span>
       <h1>THE PERFECT BASE FOR YOU</h1>
-      <button class="section__btn">TAKE A TOUR</button>
+      <button class="section__btn section__btn--first">TAKE A TOUR</button>
       <button class="section__btn section__btn--outlined">LEARN MORE</button>
     </section>
     <section class="section section--2">
@@ -135,7 +141,7 @@
         <span class="section__room-price">$345</span><span>/night</span>
       </div>
     </section>
-    <section class="section--5">
+    <section class="section--5 bg-dark">
       <span class="section__little-title">INTRO VIDEO</span>
       <h4 class="section__title">Meet With Our Luxury Place.</h4>
       <p>
@@ -152,23 +158,89 @@
       <article class="section__article section__article--core">
         <span class="section__little-title">FACILITIES</span>
         <h5 class="section__title">Core Features</h5>
-        <div class="section__core-features">
-          <img src="./assets/icons/stars-icon.svg" alt="Rate with stars icon">
-          <p class="section__medium-title">Have High Rating</p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore
-            magna..
-          </p>
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="section__core-features section__core-features--light">
+                <img src="./assets/icons/stars-icon.svg" alt="Rate with stars icon">
+                <p class="section__medium-title">Have High Rating</p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                  et
+                  dolore
+                  magna..
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="section__core-features section__core-features--light">
+                <img src="./assets/icons/stars-icon.svg" alt="Rate with stars icon">
+                <p class="section__medium-title">Quite Hours</p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                  et
+                  dolore
+                  magna..
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="section__core-features section__core-features--light">
+                <img src="./assets/icons/stars-icon.svg" alt="Rate with stars icon">
+                <p class="section__medium-title">Quite Hours</p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                  et
+                  dolore
+                  magna..
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="section__core-features section__core-features--light">
+                <img src="./assets/icons/stars-icon.svg" alt="Rate with stars icon">
+                <p class="section__medium-title">Quite Hours</p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                  et
+                  dolore
+                  magna..
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="section__core-features section__core-features--light">
+                <img src="./assets/icons/stars-icon.svg" alt="Rate with stars icon">
+                <p class="section__medium-title">Quite Hours</p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                  et
+                  dolore
+                  magna..
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="section__core-features section__core-features--light">
+                <img src="./assets/icons/stars-icon.svg" alt="Rate with stars icon">
+                <p class="section__medium-title">Quite Hours</p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                  et
+                  dolore
+                  magna..
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+          <!-- If we need scrollbar -->
+          <div class="swiper-scrollbar"></div>
         </div>
-        <div class="section__pagination-container">
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
+
       </article>
       <article class="section__article section__article--food">
         <span class="section__little-title">MENU</span>
@@ -220,7 +292,7 @@
         </div>
       </article>
     </section>
-    <section class="section section--7">
+    <section class="section section--7 bg-dark">
       <article>
         <img src="./assets/icons/rocket-icon.svg" alt="Rocket icon">
         <span class="section__span-3rem">84K</span><span>+</span>

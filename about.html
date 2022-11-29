@@ -5,6 +5,8 @@
   <title>Hotel Miranda</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="./styles/css/styles.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 </head>
 
 <body>
@@ -92,26 +94,97 @@
       <article class="section__article">
         <span class="section__little-title">FACILITIES</span>
         <h4 class="section__title">Core Features</h4>
-        <div class="section__core-features bg-dark">
-          <img src="./assets/icons/stars-icon.svg" alt="Rate with stars icon">
-          <p class="section__medium-title">Have High Rating</p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore
-            magna..
-          </p>
+
+
+
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="section__core-features">
+                <img src="./assets/icons/stars-icon.svg" alt="Rate with stars icon">
+                <p class="section__medium-title">Have High Rating</p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                  et
+                  dolore
+                  magna..
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="section__core-features">
+                <img src="./assets/icons/stars-icon.svg" alt="Rate with stars icon">
+                <p class="section__medium-title">Quite Hours</p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                  et
+                  dolore
+                  magna..
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="section__core-features">
+                <img src="./assets/icons/stars-icon.svg" alt="Rate with stars icon">
+                <p class="section__medium-title">Quite Hours</p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                  et
+                  dolore
+                  magna..
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="section__core-features">
+                <img src="./assets/icons/stars-icon.svg" alt="Rate with stars icon">
+                <p class="section__medium-title">Quite Hours</p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                  et
+                  dolore
+                  magna..
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="section__core-features">
+                <img src="./assets/icons/stars-icon.svg" alt="Rate with stars icon">
+                <p class="section__medium-title">Quite Hours</p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                  et
+                  dolore
+                  magna..
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="section__core-features">
+                <img src="./assets/icons/stars-icon.svg" alt="Rate with stars icon">
+                <p class="section__medium-title">Quite Hours</p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                  et
+                  dolore
+                  magna..
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+          <!-- If we need scrollbar -->
+          <div class="swiper-scrollbar"></div>
         </div>
-        <div class="section__pagination-container">
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
+
+
+
       </article>
     </section>
-    <section class="section section--8">
+    <section class="section section--8 bg-dark">
       <span class="section__little-title">COUNTER</span>
       <h5 class="section__title">Some Fun Facts</h5>
       <div class="section__fun-facts-container">
@@ -140,13 +213,26 @@
           <img src="./assets/icons/right-arrow-icon.svg" alt="">
         </div>
       </div>
-      <div class="section__slider">
-        <img src="./assets/images/restaurant.jpg" alt="">
-        <div class="section__pagination-container">
-          <div></div>
-          <div></div>
+
+
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <img src="./assets/images/restaurant.jpg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/images/restaurant.jpg" alt="">
+          </div>
         </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
       </div>
+
+
     </section>
   </main>
   <footer class="footer">
@@ -233,4 +319,12 @@
   </footer>
   <script src="./js/home.js"></script>
 </body>
+
 </html>
+<!--<div class="section__slider">
+        <img src="./assets/images/restaurant.jpg" alt="">
+        <div class="section__pagination-container">
+          <div></div>
+          <div></div>
+        </div>
+      </div>-->

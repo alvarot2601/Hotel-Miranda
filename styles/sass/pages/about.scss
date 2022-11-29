@@ -59,6 +59,6 @@
     }
 }
 .section--8{
-    @include general-section($fourth-color, 60px, 60px, 20px, 20px);
+    @include general-section(60px, 60px, 20px, 20px);
     
 }

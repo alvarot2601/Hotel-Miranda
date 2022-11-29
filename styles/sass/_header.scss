@@ -6,9 +6,14 @@
 }
 .header {
   animation: nav 1s ease 0s 1 normal backwards;
-
+  position: sticky;
+  z-index: 999;
+  top:0;
+  left:0;
+  width: 100%;
   min-height: 70px;
   display: block;
+  background-color: $fifth-color;
   nav {
     //height: 70px;
   }
@@ -39,15 +44,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    img:first-child {
-      height: 12.35px;
-      padding: 10px;
-      filter: drop-shadow(0 0 0.75rem crimson);
-      background-color: white;
-      margin-right: 13.52px;
-    }
-    img:nth-child(2) {
-      height: 27.77px;
-    }
+  }
+  &__h{
+    //height: 12.35px;
+    padding: 10px;
+    filter: drop-shadow(0 0 0.4rem $third-color);
+    background-color: white;
+    margin-right: 13.52px;
+  }
+  &__logo{
+    height: 27.77px;
   }
 }
