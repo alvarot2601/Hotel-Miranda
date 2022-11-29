@@ -155,7 +155,7 @@ button{
         content: url('../../assets/icons/01.svg');
         position: absolute;
         top:20px;
-        right: 32px;
+        right: 0px;
     }
     &__article--core{
         margin-bottom:60px;
@@ -224,6 +224,17 @@ button{
             background-color: $secondary-color;
             border-radius: 100%;
         }
+        margin-top: 15px;
+    }
+    &__span-3rem{
+        font-size:3rem;
+        font-family: 'Orbitron';
+    }
+    &__slider{
+        margin-top:24px;
+        img{
+            width:100%;
+        }
     }
 }
 
@@ -234,8 +245,8 @@ button{
   h1{
     @include general-title;
     font-size: clamp(45px, 3.125rem, 80px);
-    margin:40px 0px;
     line-height: 60px;
+    animation: title-right 2s ease 0s 1 normal backwards;
   }
   .section__little-title{
     text-align: left;
@@ -300,9 +311,8 @@ button{
         margin:0px;
     }
     video{
-        min-height: 270px;
-        background-color: grey;
-        margin-bottom:36px;
+        
+        margin:32px 0px 36px 0px;
     }
 }
 
@@ -335,7 +345,9 @@ button{
         width:114px;
         height: 114px;
     }
+   
 }
+
 .section--7
 {
     color:#ffffff;
@@ -347,10 +359,6 @@ button{
     img{
         margin:auto;
         margin-bottom: 16px;
-    }
-    span{
-        font-size:3rem;
-        font-family: 'Orbitron';
     }
     p{
         font-weight: 600;

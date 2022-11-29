@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Orbitron&family=Space+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Space+Mono&display=swap");
 @font-face {
   font-family: "Orbitron", sans-serif;
   font-family: "Space Mono", monospace;
@@ -36,4 +36,9 @@ $grey-color: #3c3d3d;
   padding: $padding-top $padding-right $padding-bottom $padding-left;
   background-color: $background-color;
   //text-align: center;
+}
+@mixin flex($direction:row, $gap:0){
+  display: flex;
+  flex-direction: $direction;
+  gap:$gap;
 }
