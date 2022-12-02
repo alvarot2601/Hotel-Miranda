@@ -1,0 +1,16 @@
+.founder-card{
+    padding:60px 26px 41px 26px;
+    position: relative;
+    text-align: center;
+    background-color: red;
+    &__circle-img{
+        width: 150px;
+        height: 150px;
+        border-radius: 100%;
+        margin:auto;
+        margin-bottom: 38px;
+    }
+    .title--14{
+        margin: 15px 0px 25px 0px;
+    }
+}

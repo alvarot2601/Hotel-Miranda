@@ -14,15 +14,17 @@
   min-height: 70px;
   display: block;
   background-color: $fifth-color;
-  nav {
-    //height: 70px;
+  &__li{
+    display: flex;
+    align-items: center;
   }
   &__icon--1 {
     width: 20px;
     height: 13px;
+    margin-right: 2rem;
   }
   &__ul--1 {
-    min-height: 70px;
+    height: 70px;
     box-shadow: 0px 1px 10px $primary-color;
     padding: 17px 20px;
     display: flex;
@@ -34,6 +36,9 @@
     flex-direction: column;
     gap: 23.75px;
     padding: 32px 0px 26px 21px;
+  }
+  &__icon--2{
+    margin-right: 28px;
   }
   &__icon--2,
   &__icon--3 {

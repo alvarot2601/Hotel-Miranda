@@ -1,0 +1,15 @@
+.hotel-features-section
+{
+    @include general-section(48px, 48px, 48px, 48px);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap:60px;
+    img{
+        margin:auto;
+        margin-bottom: 16px;
+    }
+    p{
+        font-weight: 600;
+    }
+}

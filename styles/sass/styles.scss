@@ -1,9 +1,23 @@
 @import '../resets/normalize';
 @import "globals";
-@import "./pages/home";
+@import './header';
+@import "./header-section";
+@import "./section";
+@import "./btn";
+@import "./core-article";
+@import "./food-article";
+@import "./titles";
+@import "./room-section";
+@import "./core-menu-section";
+@import "./hotel-features-section";
+@import "./target-container";
+@import "./form";
+@import "./room-services-list";
+@import "./founder-card";
 @import "./pages/about";
-@import 'header';
-@import 'footer';
+
+@import './footer';
+@import './swiper';
 html, * {
     box-sizing: border-box;
     margin: 0;
@@ -13,10 +27,46 @@ body{
     min-height: 320px;
     font-family:$primary-font-family;
     font-size: 0.89rem;
+	line-height: 22px;
+	background-image: linear-gradient(
+		125deg,
+		hsl(0deg 0% 100%) 0%,
+		hsl(0deg 0% 100%) 13%,
+		hsl(0deg 0% 99%) 18%,
+		hsl(0deg 0% 99%) 23%,
+		hsl(0deg 0% 98%) 27%,
+		hsl(0deg 0% 98%) 30%,
+		hsl(0deg 0% 97%) 33%,
+		hsl(0deg 0% 97%) 37%,
+		hsl(0deg 0% 96%) 40%,
+		hsl(0deg 0% 96%) 43%,
+		hsl(0deg 0% 96%) 46%,
+		hsl(0deg 0% 96%) 49%,
+		hsl(0deg 0% 96%) 51%,
+		hsl(0deg 0% 96%) 54%,
+		hsl(0deg 0% 96%) 57%,
+		hsl(0deg 0% 96%) 60%,
+		hsl(0deg 0% 97%) 63%,
+		hsl(0deg 0% 97%) 67%,
+		hsl(0deg 0% 98%) 70%,
+		hsl(0deg 0% 98%) 73%,
+		hsl(0deg 0% 99%) 77%,
+		hsl(0deg 0% 99%) 82%,
+		hsl(0deg 0% 100%) 87%,
+		hsl(0deg 0% 100%) 100%
+	  );
 }
-
+iframe{
+    max-height: 270px;
+    margin-top:32px;
+	margin-bottom:36px;
+}
 .orbitron{
 	font-family: 'Orbitron';
+}
+.span-3rem{
+	font-size: 3rem;
+	margin-bottom: 10px;
 }
 h1,h2,h3,h4,h5,h6{
     //margin:20px 0px;
@@ -49,16 +99,75 @@ ul{
     padding:0;
 }
 .bg-dark{
-	background-color:$third-color;
+	background-image: linear-gradient(
+  135deg,
+  hsl(0deg 0% 6%) 0%,
+  hsl(0deg 0% 10%) 10%,
+  hsl(0deg 0% 12%) 20%,
+  hsl(0deg 0% 14%) 30%,
+  hsl(0deg 0% 16%) 40%,
+  hsl(0deg 0% 18%) 50%,
+  hsl(0deg 0% 16%) 60%,
+  hsl(0deg 1% 14%) 70%,
+  hsl(0deg 3% 12%) 80%,
+  hsl(0deg 5% 10%) 90%,
+  hsl(0deg 15% 6%) 100%
+);
 	color:#ffffff;
+	&--2{
+background-image: linear-gradient(
+  230deg,
+  hsl(0deg 0% 0%) 0%,
+  hsl(0deg 0% 5%) 10%,
+  hsl(0deg 0% 7%) 20%,
+  hsl(0deg 0% 9%) 30%,
+  hsl(0deg 0% 10%) 40%,
+  hsl(0deg 0% 11%) 50%,
+  hsl(0deg 4% 12%) 60%,
+  hsl(0deg 7% 13%) 70%,
+  hsl(0deg 10% 13%) 80%,
+  hsl(0deg 12% 14%) 90%,
+  hsl(0deg 14% 15%) 100%
+);
+	}
 }
 .bg-light{
-	background-color: $fourth-color;
+	background-image: linear-gradient(
+  125deg,
+  hsl(0deg 0% 100%) 0%,
+  hsl(0deg 0% 100%) 13%,
+  hsl(0deg 0% 99%) 18%,
+  hsl(0deg 0% 99%) 23%,
+  hsl(0deg 0% 98%) 27%,
+  hsl(0deg 0% 98%) 30%,
+  hsl(0deg 0% 97%) 33%,
+  hsl(0deg 0% 97%) 37%,
+  hsl(0deg 0% 96%) 40%,
+  hsl(0deg 0% 96%) 43%,
+  hsl(0deg 0% 96%) 46%,
+  hsl(0deg 0% 96%) 49%,
+  hsl(0deg 0% 96%) 51%,
+  hsl(0deg 0% 96%) 54%,
+  hsl(0deg 0% 96%) 57%,
+  hsl(0deg 0% 96%) 60%,
+  hsl(0deg 0% 97%) 63%,
+  hsl(0deg 0% 97%) 67%,
+  hsl(0deg 0% 98%) 70%,
+  hsl(0deg 0% 98%) 73%,
+  hsl(0deg 0% 99%) 77%,
+  hsl(0deg 0% 99%) 82%,
+  hsl(0deg 0% 100%) 87%,
+  hsl(0deg 0% 100%) 100%
+);
 	color:$third-color;
 }
-button{
-	font-family: 'Orbitron';
+.room-details-img{
+	width: 100%;
+	max-height: 214px;
+	margin-top:16px;
 }
+
+
 //
 @keyframes nav {
 	0% {

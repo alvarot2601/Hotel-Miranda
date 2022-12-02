@@ -75,7 +75,7 @@
         align-items: center;
         gap:21px;
     }
-    &__span-icon{
+    &__icon{
         font-size:2.5rem;
     }
     &__contact-column{
@@ -84,7 +84,6 @@
         gap:10px;
     }
     &__copyright-container{
-        background-color: $third-color;
         padding:16px 0px 16px 20px;
         color:#ffffff;
         display: flex;

@@ -1,0 +1,44 @@
+.btn{
+    letter-spacing: 2.8px;
+  font-size: 0.61rem;
+  font-weight: bolder;
+  line-height: 15px;
+  padding: 22px 46px;
+  color: #000000;
+  border: none;
+  background-image: linear-gradient(
+    130deg,
+    hsl(39deg 27% 65%) 0%,
+    hsl(39deg 28% 66%) 13%,
+    hsl(39deg 29% 67%) 19%,
+    hsl(39deg 31% 69%) 23%,
+    hsl(39deg 33% 70%) 27%,
+    hsl(39deg 34% 71%) 31%,
+    hsl(39deg 36% 73%) 34%,
+    hsl(39deg 38% 74%) 38%,
+    hsl(39deg 41% 75%) 41%,
+    hsl(39deg 43% 76%) 44%,
+    hsl(39deg 46% 77%) 47%,
+    hsl(38deg 49% 79%) 50%,
+    hsl(39deg 45% 77%) 53%,
+    hsl(39deg 42% 76%) 56%,
+    hsl(39deg 39% 74%) 59%,
+    hsl(39deg 36% 73%) 62%,
+    hsl(39deg 34% 71%) 66%,
+    hsl(39deg 31% 70%) 69%,
+    hsl(39deg 29% 68%) 73%,
+    hsl(39deg 27% 67%) 77%,
+    hsl(39deg 26% 65%) 81%,
+    hsl(39deg 24% 63%) 87%,
+    hsl(40deg 22% 62%) 100%
+  );
+    border-radius: 5px;
+    font-family: $primary-font-family;
+
+    &--outlined{
+        background-image: none;
+        background-color: transparent;
+        border:1px solid #ffffff;
+        color: #FFFFFF;    
+    }
+}
