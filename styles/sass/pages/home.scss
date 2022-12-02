@@ -30,7 +30,12 @@ button{
 
 
 .section{
-    @include general-section($primary-color, 75px, 76px);
+    background-color:$fourth-color;
+    padding:20px;
+    @include general-section(75px, 76px);
+    &__btn--first{
+        margin-bottom:24px;
+    }
     &__little-title{
         font-size: clamp(11.5px, 0.72rem, 14px);
         line-height: 127%;
@@ -94,7 +99,7 @@ button{
     }
     &__icon-people-transparent{
         position: absolute;
-        top:50px;
+        top:42px;
         left:32%;
         width: 144px;
         height: 106px;
@@ -145,17 +150,24 @@ button{
     }
     &__core-features{
         text-align: left;
-        background-color: $fourth-color;
         position: relative;
         min-height: 350px;
-        padding: 81px 0px 4px 0px;
+        padding: 73px 15px 51px 15px;
         box-sizing: border-box;
+        background-color: $primary-color;
+        border-radius: 10px;
+    }
+    &__core-features--light{
+        background-color: $fifth-color;
     }
     &__core-features::before{
-        content: url('../../assets/icons/01.svg');
+        content: url('../../assets/icons/01-dark.svg');
         position: absolute;
         top:20px;
-        right: 0px;
+        right: 8px;
+    }
+    &__core-features--light::before{
+        content: url('../../assets/icons/01.svg');
     }
     &__article--core{
         margin-bottom:60px;
@@ -173,7 +185,7 @@ button{
         border:1px solid $secondary-color;
         color: $secondary-color;
     }
-    .section__article--food{
+    &__article--food{
         padding: 115px 0px 0px 0px;
         text-align: left;
         position: relative;
@@ -241,7 +253,7 @@ button{
 
 .section--1{
   //@include general-section($primary-color, 75px, 76px);
-  gap: 24px;
+  background-color: $primary-color;
   h1{
     @include general-title;
     font-size: clamp(45px, 3.125rem, 80px);
@@ -254,7 +266,11 @@ button{
 }
 .section--2{
     background-color:$third-color;
+    color:#ffffff;
     padding: 36px 20px;
+    ::placeholder{
+        color:#ffffff;
+    }
     label{
         font-weight: bold;
     }
@@ -280,7 +296,8 @@ button{
     }
 }
 .section--3{
-    @include general-section($fourth-color, 38px, 60px);
+    background-color: $fourth-color;
+    @include general-section(38px, 60px);
     color: $third-color;
     text-align: left;
     h2{
@@ -289,7 +306,7 @@ button{
 }
 .section--4{
     color:$third-color;
-    @include general-section($fourth-color, 0px, 20px, 0px, 0px);
+    @include general-section(0px, 20px, 0px, 0px);
     text-align: center;
     h3{
         margin-top: 24px;
@@ -305,7 +322,8 @@ button{
 }
 .section--5{
     color:#ffffff;
-    @include general-section($third-color, 64px, 48px);
+    
+    @include general-section(64px, 48px);
     text-align: left;
     h4{
         margin:0px;
@@ -318,7 +336,7 @@ button{
 
 .section--6{
     color: $third-color;
-    @include general-section($fourth-color, 60px, 48px, 24px, 24px);
+    @include general-section(60px, 48px, 24px, 24px);
     text-align: center;
     h5{
         margin-bottom: 32px;
@@ -351,7 +369,7 @@ button{
 .section--7
 {
     color:#ffffff;
-    @include general-section($third-color, 48px, 48px, 48px, 48px);
+    @include general-section(48px, 48px, 48px, 48px);
     text-align: center;
     display: flex;
     flex-direction: column;

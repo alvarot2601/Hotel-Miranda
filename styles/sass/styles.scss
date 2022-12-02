@@ -19,7 +19,7 @@ body{
 	font-family: 'Orbitron';
 }
 h1,h2,h3,h4,h5,h6{
-    margin:20px 0px;
+    //margin:20px 0px;
     font-family: 'Orbitron';
 }
 h1{
@@ -52,7 +52,13 @@ ul{
 	background-color:$third-color;
 	color:#ffffff;
 }
-
+.bg-light{
+	background-color: $fourth-color;
+	color:$third-color;
+}
+button{
+	font-family: 'Orbitron';
+}
 //
 @keyframes nav {
 	0% {
