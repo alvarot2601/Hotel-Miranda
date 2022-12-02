@@ -20,9 +20,10 @@
         width: 84%;
         padding:49px 20px 0px 20px;
         margin: auto;
+        
     }
     &__container--2{
-        padding:49px 20px 0px 20px;
+        padding:49px 20px 28px 20px;
         margin: auto;
         width:100%;
     }
@@ -37,7 +38,7 @@
     &__description{
         margin:12px 0px;
         line-height: 146%;
-        color: $grey-color;
+        //color: $grey-color;
     }
     &__price{
         //filter: drop-shadow(0 0 0.75rem $third-color);
