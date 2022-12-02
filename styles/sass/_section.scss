@@ -1,0 +1,50 @@
+.section{
+    @include general-section(36px, 36px);
+    ::placeholder{
+        color:#ffffff;
+    }
+    label{
+        font-weight: bold;
+    }
+    input{
+        color:white;
+        margin-top: 24px;
+        margin-bottom:30px;
+        width:100%;
+        background-color: transparent;
+        outline: none;
+        border:none;
+        border-bottom: 2px solid #FFFFFF;
+        padding:10px;
+    }
+    &__60{
+        padding-top:60px;
+        padding-bottom: 0px;
+    }
+    &__related-rooms{
+        padding-top: 101px;
+        padding-bottom: 74px;
+    }
+    /*
+    &__span, &__p{
+        position: inherit;
+    }
+    &__span-target{
+        position: inherit;
+        margin-bottom: 21px;
+        z-index: 1;
+        font-size: clamp(20px, 6.3vw, 30px);
+        font-weight: 400;
+        font-family: 'Orbitron';
+    }
+    &__p-target{
+        margin-top:21px;
+        font-size: clamp(12px, 3.89vw, 14px);
+    }
+    button:hover{
+        cursor: pointer;
+        background-color: transparent;
+        border:1px solid $secondary-color;
+        color: $secondary-color;
+    }*/
+}

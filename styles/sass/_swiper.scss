@@ -1,0 +1,57 @@
+.swiper {
+  //overflow-y: auto!important;
+  //max-width: 600px;
+  //height: auto;
+  //position: relative;
+  //height: fit-content;
+  display: flex;
+  flex-direction: column;
+  &-slide {
+    //height: clamp(244px, 76.25vw, 500px);
+  }
+  &--room {
+    padding-top:25px!important;
+    img{
+        max-height: 244px;
+    }
+    .swiper-button-next, .swiper-button-prev{
+      top:30%;
+    }
+  }
+  &--food {
+    margin-top: 60px;
+    img{
+      height: clamp(335px, 104.68vw, 370px);
+    }
+  }
+  &--food-menu {
+    margin-top: 60px;
+  }
+  
+  &--rooms{
+    display: flex;
+    flex-direction: column;
+  }
+}
+.swiper-pagination-bullets {
+  position: relative!important;
+  
+}
+.swiper-pagination-bullet {
+  width: 20px!important;
+  height: 20px!important;
+  text-align: center;
+  line-height: 20px;
+  font-size: 12px;
+  color: #000;
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.swiper-pagination-bullet-active {
+  color: #fff;
+  background: #007aff;
+}
+
+
+

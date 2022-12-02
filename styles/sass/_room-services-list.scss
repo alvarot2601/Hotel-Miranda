@@ -1,0 +1,14 @@
+.room-services-list{
+    display: flex;
+    gap:34px;
+    font-size: clamp(0.67rem, 3.35vw, 0.83rem);
+    &__column{
+        display: flex;
+        flex-direction: column;
+        gap:17px;
+    }
+    &__row{
+        display: flex;
+        gap:8px;
+    }
+}

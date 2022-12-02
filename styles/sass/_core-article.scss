@@ -1,0 +1,32 @@
+.core-article{
+    margin-bottom:60px;
+    .medium-title{
+        margin-bottom:28px;
+    }
+    &__img{
+        width: 70px;
+        height: 70px;
+        margin-bottom: 38px;
+    }
+    &__container{
+        text-align: left;
+        position: relative;
+        min-height: 21.875rem;
+        padding: 73px 35px 51px 35px;
+        box-sizing: border-box;
+        background-color: $primary-color;
+        border-radius: 10px;
+    }
+    &__container--light{
+        background-color: $fifth-color;
+    }
+    &__container::before{
+        content: url('../../assets/icons/01-dark.svg');
+        position: absolute;
+        top:20px;
+        right: 32px;
+    }
+    &__container--light::before{
+        content: url('../../assets/icons/01.svg');
+    }
+}

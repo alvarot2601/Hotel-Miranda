@@ -1,0 +1,29 @@
+.core-menu-section{
+    @include general-section(60px, 60px,0px, 0px);
+    text-align: center;
+    h5{
+        margin: 0px 24px 32px 24px;
+    }
+    .section__medium-title{
+        margin:37px 0px 28px 0px;
+    }
+    .section__title{
+        margin-bottom:32px;
+    }
+    .section__slider{
+        margin-top:60px;
+        img{
+            width:100%;
+            margin-bottom:24px;
+        }
+    }
+    .swiper{
+        //max-height: 370px;
+    }
+    &--72{
+        padding-bottom: 72px;
+    }
+    &__img{
+        
+    }
+}

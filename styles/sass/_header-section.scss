@@ -1,0 +1,13 @@
+.header-section{
+    @include general-section(75px, 76px);
+    color:#ffffff;
+    h1{
+        @include general-title;
+        font-size: clamp(45px, 3.125rem, 80px);
+        line-height: 60px;
+        animation: title-right 2s ease 0s 1 normal backwards;
+    }
+    .btn:nth-of-type(1){
+        margin-bottom: 24px;   
+    }
+}
