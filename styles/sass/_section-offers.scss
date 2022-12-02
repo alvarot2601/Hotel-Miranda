@@ -1,0 +1,55 @@
+.section-offers{
+    padding:48px 20px 60px 20px;
+    &__card{
+        box-shadow: 0px 14px 24px rgba(184, 184, 184, 0.1);
+    }
+    &__img-container{
+        position: relative;
+    }
+    &__img{
+        width: 100%;
+        max-height: 162px;
+        object-fit: cover;
+    }
+    &__old-price{
+        position: absolute;
+        top:81px;
+        right:14px;
+        text-decoration: line-through;
+        span:nth-of-type(1){
+            line-height: 25px;
+            font-size:23px;
+            font-weight: 700;
+            text-decoration: line-through;
+        }
+        span:nth-of-type(2){
+            text-decoration: line-through;
+        }
+    }
+    &__new-price{
+        position: absolute;
+        bottom:15px;
+        right:14px;
+        color:red;
+        
+        span:nth-of-type(1){
+            line-height: 32px;
+            font-size:30px;
+            font-weight: 700;
+        }
+        span:nth-of-type(2){
+        }
+    }
+    &__info-container{
+        padding:16px 20px 32px 20px;
+    }
+    .little-title{
+        margin:0;
+    }
+    .title{
+        margin:12px 0px 16px 0px;
+    }
+    .room-services-list{
+        margin:25px 0px;
+    }
+}
