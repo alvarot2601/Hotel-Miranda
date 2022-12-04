@@ -13,6 +13,7 @@
     padding-top:25px!important;
     img{
         max-height: 244px;
+        max-width: 600px;
     }
     .swiper-button-next, .swiper-button-prev{
       top:30%;
@@ -21,7 +22,11 @@
   &--food {
     margin-top: 60px;
     img{
-      height: clamp(220px, 104.68vw, 231px);
+      height: clamp(220px, 68.75vw, 300px);
+      max-width: 600px;
+      width: 100%;
+      object-fit: cover;
+      margin:auto;
     }
   }
   &--food-menu {

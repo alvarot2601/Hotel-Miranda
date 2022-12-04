@@ -653,6 +653,7 @@ button:hover{
   width: 84%;
   padding: 49px 20px 0px 20px;
   margin: auto;
+  max-width: 504px;
 }
 .room-section__container--2 {
   padding: 49px 20px 28px 20px;
@@ -1159,6 +1160,7 @@ button:hover{
 }
 .swiper--room img {
   max-height: 244px;
+  max-width: 600px;
 }
 .swiper--room .swiper-button-next, .swiper--room .swiper-button-prev {
   top: 30%;
@@ -1167,7 +1169,11 @@ button:hover{
   margin-top: 60px;
 }
 .swiper--food img {
-  height: clamp(220px, 104.68vw, 231px);
+  height: clamp(220px, 68.75vw, 300px);
+  max-width: 600px;
+  width: 100%;
+  object-fit: cover;
+  margin: auto;
 }
 .swiper--food-menu {
   margin-top: 60px;
