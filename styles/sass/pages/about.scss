@@ -1,8 +1,10 @@
 .section{
     &__icon-container{
+        margin:auto;
         margin-top:51px;
         @include flex(row, 20px);
         flex-wrap: wrap;
+        justify-content: center;
     }
     &__icon-subcontainer{
         display: flex;
@@ -13,10 +15,10 @@
         text-align: center;
         width:clamp(130px, 40.6vw, 158px);
         height:clamp(130px, 40.6vw, 158px);
-        border:1px solid black;
     }
     &__icon-subcontainer--dark{
-        border:1px solid blue;
+        background-color: #BEAD8E;
+        color:#FFFFFF;
     }
     &__restaurant-container{
         margin-top:50px;

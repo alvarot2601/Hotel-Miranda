@@ -1,6 +1,7 @@
 .header-section{
     @include general-section(75px, 76px);
     color:#ffffff;
+    position: relative;
     h1{
         @include general-title;
         font-size: clamp(45px, 3.125rem, 80px);
