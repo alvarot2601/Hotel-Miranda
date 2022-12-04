@@ -1,16 +1,29 @@
 .founder-card{
     padding:60px 26px 41px 26px;
-    position: relative;
     text-align: center;
-    background-color: red;
+    &__img-container{
+        position: relative;
+        margin:auto;
+        margin-bottom: 38px;
+        max-width: 150px;
+    }
     &__circle-img{
         width: 150px;
         height: 150px;
         border-radius: 100%;
         margin:auto;
-        margin-bottom: 38px;
     }
     .title--14{
         margin: 15px 0px 25px 0px;
+    }
+    &__elipse{
+        position: absolute;
+        top:0px;
+        right:0px;
+    }
+    &__tick{
+        position: absolute;
+        top:18px;
+        right:16px;
     }
 }

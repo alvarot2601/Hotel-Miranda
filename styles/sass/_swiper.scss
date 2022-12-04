@@ -21,7 +21,7 @@
   &--food {
     margin-top: 60px;
     img{
-      height: clamp(335px, 104.68vw, 370px);
+      height: clamp(220px, 104.68vw, 231px);
     }
   }
   &--food-menu {
@@ -34,7 +34,6 @@
   }
 }
 .swiper-pagination-bullets {
-  position: relative!important;
   
 }
 .swiper-pagination-bullet {

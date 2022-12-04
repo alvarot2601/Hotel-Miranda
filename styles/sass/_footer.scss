@@ -17,12 +17,18 @@
             color:#ffffff;
             background-color: $third-color;
             font-weight: 900;
+            width: 5rem;
+            height: 5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
         img{
             width: 157px;
             margin-left: 28px;
             padding:8px;
-            background-color: rgba(248, 248, 248, 1);            ;
+            background-color: rgba(248, 248, 248, 1);
+            background-color: transparent;
         }   
     }
     &__description{

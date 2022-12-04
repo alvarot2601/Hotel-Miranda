@@ -337,7 +337,7 @@ template {
   display: flex;
   align-items: center;
 }
-.header__icon--1 {
+.header__icon--1, .header #close-menu {
   width: 20px;
   height: 13px;
   margin-right: 2rem;
@@ -381,6 +381,7 @@ template {
 .header-section {
   padding: 75px 20px 76px 20px;
   color: #ffffff;
+  position: relative;
 }
 .header-section h1 {
   font-weight: 600;
@@ -452,7 +453,7 @@ button:hover{
   font-weight: bolder;
   line-height: 15px;
   padding: 22px 46px;
-  color: #000000;
+  color: #ffffff;
   border: none;
   background-image: linear-gradient(130deg, hsl(39deg, 27%, 65%) 0%, hsl(39deg, 28%, 66%) 13%, hsl(39deg, 29%, 67%) 19%, hsl(39deg, 31%, 69%) 23%, hsl(39deg, 33%, 70%) 27%, hsl(39deg, 34%, 71%) 31%, hsl(39deg, 36%, 73%) 34%, hsl(39deg, 38%, 74%) 38%, hsl(39deg, 41%, 75%) 41%, hsl(39deg, 43%, 76%) 44%, hsl(39deg, 46%, 77%) 47%, hsl(38deg, 49%, 79%) 50%, hsl(39deg, 45%, 77%) 53%, hsl(39deg, 42%, 76%) 56%, hsl(39deg, 39%, 74%) 59%, hsl(39deg, 36%, 73%) 62%, hsl(39deg, 34%, 71%) 66%, hsl(39deg, 31%, 70%) 69%, hsl(39deg, 29%, 68%) 73%, hsl(39deg, 27%, 67%) 77%, hsl(39deg, 26%, 65%) 81%, hsl(39deg, 24%, 63%) 87%, hsl(40deg, 22%, 62%) 100%);
   border-radius: 5px;
@@ -463,6 +464,13 @@ button:hover{
   background-color: transparent;
   border: 1px solid #ffffff;
   color: #FFFFFF;
+}
+.btn:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+.btn--m32 {
+  margin-top: 32px;
 }
 
 .core-article {
@@ -482,8 +490,8 @@ button:hover{
   min-height: 21.875rem;
   padding: 73px 35px 51px 35px;
   box-sizing: border-box;
-  background-color: #003566;
   border-radius: 10px;
+  background-color: #292929;
 }
 .core-article__container--light {
   background-color: #f5f5f5;
@@ -558,7 +566,6 @@ button:hover{
   font-size: clamp(22px, 6.9vw, 32px);
   margin-bottom: 21px;
   line-height: 41px;
-  text-align: left;
 }
 .title--30 {
   font-size: clamp(21px, 6.56vw, 30px);
@@ -629,14 +636,18 @@ button:hover{
   padding-right: 20px;
 }
 .room-section h3 {
-  margin-bottom: 44px;
+  margin-bottom: 19px;
 }
 .room-section__box {
   position: relative;
   min-height: 460px;
 }
 .room-section__img {
+  height: 218px;
   max-height: 244px;
+  margin: auto;
+  object-fit: cover;
+  width: 100%;
 }
 .room-section__container {
   width: 84%;
@@ -687,7 +698,7 @@ button:hover{
   z-index: 2;
 }
 .room-section__icon-list--center {
-  top: 215px;
+  top: 190px;
 }
 .room-section__icon {
   width: clamp(11px, 4vw, 20px);
@@ -818,6 +829,33 @@ button:hover{
 .form .title--18 {
   margin-bottom: 35px;
 }
+.form--2 {
+  text-align: center;
+}
+.form--2 input {
+  padding: 25px 21px 23px 21px;
+  background-color: #F8F8F8;
+  color: #777777;
+  margin: 0px;
+  margin-bottom: 17px;
+  border-radius: 10px;
+  border: 1px solid #777777;
+}
+.form--2 ::placeholder {
+  color: #777777;
+}
+.form--2 textarea {
+  min-height: 175px;
+  width: 100%;
+  padding: 25px 25px 0px 20px;
+  margin-bottom: 36px;
+  border-radius: 10px;
+  border: 1px solid #001329;
+}
+.form--2 button {
+  max-width: 258px;
+  width: 100%;
+}
 
 .room-services-list {
   display: flex;
@@ -836,19 +874,32 @@ button:hover{
 
 .founder-card {
   padding: 60px 26px 41px 26px;
-  position: relative;
   text-align: center;
-  background-color: red;
+}
+.founder-card__img-container {
+  position: relative;
+  margin: auto;
+  margin-bottom: 38px;
+  max-width: 150px;
 }
 .founder-card__circle-img {
   width: 150px;
   height: 150px;
   border-radius: 100%;
   margin: auto;
-  margin-bottom: 38px;
 }
 .founder-card .title--14 {
   margin: 15px 0px 25px 0px;
+}
+.founder-card__elipse {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+.founder-card__tick {
+  position: absolute;
+  top: 18px;
+  right: 16px;
 }
 
 .section-offers {
@@ -905,11 +956,13 @@ button:hover{
 }
 
 .section__icon-container {
+  margin: auto;
   margin-top: 51px;
   display: flex;
   flex-direction: row;
   gap: 20px;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .section__icon-subcontainer {
   display: flex;
@@ -920,10 +973,10 @@ button:hover{
   text-align: center;
   width: clamp(130px, 40.6vw, 158px);
   height: clamp(130px, 40.6vw, 158px);
-  border: 1px solid black;
 }
 .section__icon-subcontainer--dark {
-  border: 1px solid blue;
+  background-color: #BEAD8E;
+  color: #FFFFFF;
 }
 .section__restaurant-container {
   margin-top: 50px;
@@ -967,6 +1020,38 @@ button:hover{
   padding: 60px 20px 60px 20px;
 }
 
+.breadcrumb {
+  padding: 16px 24px;
+  position: absolute;
+  right: 20px;
+  bottom: 0px;
+}
+.breadcrumb__gold {
+  color: #BEAD8E;
+}
+
+.contact-data-section {
+  padding: 24px 20px 14px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 47px;
+}
+.contact-data-section__target {
+  padding: 52px 0px 56px 0px;
+  position: relative;
+}
+.contact-data-section__info {
+  display: flex;
+  gap: 27px;
+  align-items: flex-start;
+}
+.contact-data-section__abs-img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
 .footer__box {
   padding: 32px 20px 16px 20px;
   background-image: url("../../assets/icons/footer-background.svg");
@@ -986,12 +1071,18 @@ button:hover{
   color: #ffffff;
   background-color: #001329;
   font-weight: 900;
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .footer__subcontainer--1 img {
   width: 157px;
   margin-left: 28px;
   padding: 8px;
   background-color: rgb(248, 248, 248);
+  background-color: transparent;
 }
 .footer__description {
   color: #3c3d3d;
@@ -1076,7 +1167,7 @@ button:hover{
   margin-top: 60px;
 }
 .swiper--food img {
-  height: clamp(335px, 104.68vw, 370px);
+  height: clamp(220px, 104.68vw, 231px);
 }
 .swiper--food-menu {
   margin-top: 60px;
@@ -1084,10 +1175,6 @@ button:hover{
 .swiper--rooms {
   display: flex;
   flex-direction: column;
-}
-
-.swiper-pagination-bullets {
-  position: relative !important;
 }
 
 .swiper-pagination-bullet {
@@ -1115,14 +1202,14 @@ html, * {
 body {
   min-height: 320px;
   font-family: "Zen Dots", cursive;
-  font-size: 0.89rem;
+  font-size: 0.75rem;
   line-height: 22px;
   background-image: linear-gradient(125deg, hsl(0deg, 0%, 100%) 0%, hsl(0deg, 0%, 100%) 13%, hsl(0deg, 0%, 99%) 18%, hsl(0deg, 0%, 99%) 23%, hsl(0deg, 0%, 98%) 27%, hsl(0deg, 0%, 98%) 30%, hsl(0deg, 0%, 97%) 33%, hsl(0deg, 0%, 97%) 37%, hsl(0deg, 0%, 96%) 40%, hsl(0deg, 0%, 96%) 43%, hsl(0deg, 0%, 96%) 46%, hsl(0deg, 0%, 96%) 49%, hsl(0deg, 0%, 96%) 51%, hsl(0deg, 0%, 96%) 54%, hsl(0deg, 0%, 96%) 57%, hsl(0deg, 0%, 96%) 60%, hsl(0deg, 0%, 97%) 63%, hsl(0deg, 0%, 97%) 67%, hsl(0deg, 0%, 98%) 70%, hsl(0deg, 0%, 98%) 73%, hsl(0deg, 0%, 99%) 77%, hsl(0deg, 0%, 99%) 82%, hsl(0deg, 0%, 100%) 87%, hsl(0deg, 0%, 100%) 100%);
 }
 
 iframe {
-  max-height: 270px;
-  margin-top: 32px;
+  max-height: 186px;
+  margin-top: 24px;
   margin-bottom: 36px;
 }
 
@@ -1184,6 +1271,11 @@ ul {
 .bg-light {
   background-image: linear-gradient(125deg, hsl(0deg, 0%, 100%) 0%, hsl(0deg, 0%, 100%) 13%, hsl(0deg, 0%, 99%) 18%, hsl(0deg, 0%, 99%) 23%, hsl(0deg, 0%, 98%) 27%, hsl(0deg, 0%, 98%) 30%, hsl(0deg, 0%, 97%) 33%, hsl(0deg, 0%, 97%) 37%, hsl(0deg, 0%, 96%) 40%, hsl(0deg, 0%, 96%) 43%, hsl(0deg, 0%, 96%) 46%, hsl(0deg, 0%, 96%) 49%, hsl(0deg, 0%, 96%) 51%, hsl(0deg, 0%, 96%) 54%, hsl(0deg, 0%, 96%) 57%, hsl(0deg, 0%, 96%) 60%, hsl(0deg, 0%, 97%) 63%, hsl(0deg, 0%, 97%) 67%, hsl(0deg, 0%, 98%) 70%, hsl(0deg, 0%, 98%) 73%, hsl(0deg, 0%, 99%) 77%, hsl(0deg, 0%, 99%) 82%, hsl(0deg, 0%, 100%) 87%, hsl(0deg, 0%, 100%) 100%);
   color: #001329;
+}
+
+.bg--golden {
+  background-image: linear-gradient(135deg, hsl(39deg, 27%, 65%) 0%, hsl(38deg, 25%, 72%) 4%, hsl(38deg, 24%, 78%) 8%, hsl(37deg, 23%, 84%) 12%, hsl(37deg, 22%, 90%) 16%, hsl(37deg, 22%, 95%) 20%, hsl(0deg, 0%, 100%) 24%, hsl(0deg, 0%, 100%) 28%, hsl(0deg, 0%, 100%) 32%, hsl(0deg, 0%, 100%) 36%, hsl(0deg, 0%, 100%) 39%, hsl(0deg, 0%, 100%) 43%, hsl(0deg, 0%, 100%) 48%, hsl(0deg, 0%, 100%) 53%, hsl(0deg, 0%, 100%) 58%, hsl(0deg, 0%, 100%) 62%, hsl(0deg, 0%, 100%) 66%, hsl(0deg, 0%, 100%) 71%, hsl(0deg, 0%, 100%) 75%, hsl(37deg, 22%, 95%) 79%, hsl(37deg, 22%, 90%) 83%, hsl(37deg, 23%, 84%) 87%, hsl(38deg, 24%, 78%) 92%, hsl(38deg, 25%, 72%) 96%, hsl(39deg, 27%, 65%) 100%);
+  color: #000000;
 }
 
 .room-details-img {
