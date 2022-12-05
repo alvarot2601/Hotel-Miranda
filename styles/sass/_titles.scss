@@ -1,7 +1,7 @@
 .title{
     @include general-title;
     //cambiar max
-    font-size:clamp(39px, 12.1875vw, 56px);
+    font-size:clamp(39px, 12.1875vw, 50px);
     z-index: 1;
     position: relative;
     display: block;
@@ -22,7 +22,7 @@
         line-height:41px;
     }
     &--30{
-        font-size:clamp(21px, 6.56vw, 30px);
+        font-size:clamp(21px, 1.4rem, 30px);
         margin-bottom:21px;
         line-height: 30px;
     }

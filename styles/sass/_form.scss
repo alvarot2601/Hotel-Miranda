@@ -41,4 +41,40 @@
             width: 100%;
         }
     }
+    &--3{
+        label{
+            font-weight: bold;
+        }
+        input{
+            color:white;
+            margin-top: 24px;
+            margin-bottom:30px;
+            width:100%;
+            background-color: transparent;
+            outline: none;
+            border:none;
+            border-bottom: 2px solid #FFFFFF;
+            padding:10px;
+        }
+    }
 }
+@media (min-width: 1000px) {
+    
+    .form--3 {
+      display: flex;
+      flex-direction: row;
+      gap:30px;
+      align-items: center;
+      gap:11vw;
+      input{
+        margin-top:0px;
+        margin-bottom:0px;
+        width:17.28vw;
+        max-width: 330px;
+        }
+    }
+    .form__input-container{
+        display: flex;
+        gap: 30px;
+    }
+  }

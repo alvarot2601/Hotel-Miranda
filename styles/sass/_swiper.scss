@@ -31,6 +31,9 @@
   }
   &--food-menu {
     margin-top: 60px;
+    &--desktop{
+      display: none!important;
+    }
   }
   
   &--rooms{
@@ -57,5 +60,16 @@
   background: #007aff;
 }
 
+@media screen and (min-width:1000px){
+  .swiper--food{
+    display: none!important;
+  }
+  .swiper--food-menu{
+    display: none!important;
+  }
+  .swiper--food-menu--desktop{
+    display: block!important;
+  }
+}
 
 

@@ -32,7 +32,47 @@
         position: absolute;
         top:0;
         right:-20;
-        width:114px;
-        height: 114px;
+        z-index: -1;
     }
+}
+
+@media screen and (min-width:1000px)
+{
+    .food-article{
+        //padding:200px 17vw 0px 17vw;
+        padding-top:200px;
+        position: relative;
+        &__donut{
+            width: 229px;
+            height: 229px;
+            position: absolute;
+            top:0;
+            left: clamp(10px, 4.16vw, 80px);
+        }
+        &__container{
+            margin:auto;
+            max-width: 1170px;
+        }
+        &__img-container{
+            display: flex;
+            gap:30px;
+            img{
+                width: 370px;
+                height: 370px;
+                object-fit: cover;
+            }
+        }
+        &__menu-container{
+            display: flex;
+            flex-direction: row;
+            gap:clamp(20px, calc((2vw) * 2), 165px);
+        }
+        &__col{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            justify-content: space-around;
+        }
+    }
+    
 }

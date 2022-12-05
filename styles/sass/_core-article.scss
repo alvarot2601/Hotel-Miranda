@@ -31,3 +31,21 @@
         content: url('../../assets/icons/01.svg');
     }
 }
+@media screen and (min-width:1000px)
+{
+    .core-article{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding:0px 17vw;
+        &__row{
+            display: flex;
+            justify-content: space-around;
+            gap:clamp(2px, 1vw, 30px);
+        }
+        &__container{
+            min-width: clamp(320px, 32vw, 370px);
+            height: 349px;
+        }
+    }
+}
