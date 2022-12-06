@@ -17,6 +17,9 @@
             margin-bottom:24px;
         }
     }
+    &__card-container{
+        display: none;
+    }
     .swiper{
         //max-height: 370px;
     }
@@ -25,5 +28,24 @@
     }
     &__img{
         
+    }
+}
+@media screen and (min-width:1000px)
+{
+    .core-menu-section{
+        padding-top:118px;
+        padding-bottom: 120px;
+        &__card-container{
+            display: block;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            max-width: 1170px;
+            margin:auto;
+            justify-content: center;
+        }
+    }
+    .swiper--core-features{
+        display:none!important;
     }
 }

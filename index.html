@@ -47,68 +47,84 @@
   <main>
 
     <section class="header-section bg-dark--2">
-      <span class="little-title little-title--white little-title--left">THE ULTIMATE LUXURY EXPERIENCE</span>
-      <h1>THE PERFECT BASE FOR YOU</h1>
-      <button class="btn btn--m32">TAKE A TOUR</button>
-      <button class="btn btn--outlined">LEARN MORE</button>
+      <div class="header-section__container">
+        <span class="little-title little-title--white little-title--left">THE ULTIMATE LUXURY EXPERIENCE</span>
+        <h1>THE PERFECT BASE FOR YOU</h1>
+        <button class="btn btn--m32">TAKE A TOUR</button>
+        <button class="btn btn--outlined">LEARN MORE</button>
+      </div>
     </section>
-    <section class="section bg-dark">
-      <form action="" method="POST">
-        <label for="arrival_date">Arrival Date</label>
-        <input type="date" name="arrival_date" placeholder="2" required />
-        <label for="departure_date">LeDeparture Date</label>
-        <input for="departure_date" type="date" required />
-        <button class="btn" type="submit">CHECK AVAILABILITY</button>
-      </form>
-    </section>
-    <section class="section bg-light">
-      <span class="little-title little-title--left">ABOUT US</span>
-      <h2 class="title">Discover Our Underground.</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-        ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-        aliquip ex ea commodo consequat.
-      </p>
-      <button class="btn btn--m32">BOOK NOW</button>
-      <div class="target-container">
-        <div>
-          <div class="target-container__img">
-            <img src="./assets/images/restaurant.jpg" alt="">
+    <section class="section section--form bg-dark">
+      <form class="form--3" action="" method="POST">
+        <div class="form__input-container">
+          <div>
+            <label for="arrival_date">Arrival Date</label>
+            <input type="date" name="arrival_date" placeholder="2" required />
           </div>
-          <div class="target-container__target  bg--golden">
-            <img class="target-container__icon-people" src="./assets/icons/people-icon.svg" alt="People icon" />
-            <img class="target-container__icon-people-transparent" src="./assets/icons/transparent-people-icon.svg"
-              alt="Transparent people icon" />
-            <span class="title title--30">Strong Team</span>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor.
-            </p>
+          <div>
+            <label for="departure_date">LeDeparture Date</label>
+            <input for="departure_date" type="date" required />
           </div>
         </div>
         <div>
-          <div class="target-container__img">
-            <img src="./assets/images/restaurant.jpg" alt="">
-          </div>
-          <div class="target-container__target bg-dark">
-            <img class="target-container__icon-luxury-room" src="./assets/icons/luxury-room-icon.svg"
-              alt="People icon" />
-            <span class="title title--30">Luxury Room</span>
+          <button class="btn" type="submit">CHECK AVAILABILITY</button>
+        </div>
+      </form>
+    </section>
+    <section class="section section--about-us bg-light">
+      <div class="section--about-us__container">
+        <div class="section--about-us__col">
+          <span class="little-title little-title--left">ABOUT US</span>
+          <div class="section__text-container">
+            <h2 class="title title--left">Discover Our Underground.</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor.
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+              ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+              aliquip ex ea commodo consequat.
             </p>
+            <button class="btn btn--m32">BOOK NOW</button>
+          </div>
+        </div>
+        <div class="target-container">
+          <div class="target-container__column">
+            <div class="target-container__img">
+              <img src="./assets/images/restaurant.jpg" alt="">
+            </div>
+            <div class="target-container__target  bg--golden">
+              <img class="target-container__icon-people" src="./assets/icons/people-icon.svg" alt="People icon" />
+              <img class="target-container__icon-people-transparent" src="./assets/icons/transparent-people-icon.svg"
+                alt="Transparent people icon" />
+              <span class="title title--30">Strong Team</span>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor.
+              </p>
+            </div>
+          </div>
+          <div class="target-container__column target-container__column--margin">
+            <div class="target-container__img">
+              <img src="./assets/images/restaurant.jpg" alt="">
+            </div>
+            <div class="target-container__target bg-dark">
+              <img class="target-container__icon-luxury-room" src="./assets/icons/luxury-room-icon.svg"
+                alt="People icon" />
+              <span class="title title--30">Luxury Room</span>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor.
+              </p>
+            </div>
           </div>
         </div>
       </div>
+      <div class="section--about-us__rectangle bg--golden"></div>
     </section>
     <!--seccion 4-->
     <section class="section room-section">
       <div>
         <span class="little-title">ROOMS</span>
         <h3 class="title">Hand Picked Rooms</h3>
-
         <div class="swiper swiper--room">
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
@@ -182,24 +198,99 @@
         </div>
       </div>
     </section>
-    <section class="section bg-dark">
-      <span class="little-title little-title--left">INTRO VIDEO</span>
-      <h4 class="title title--left">Meet With Our Luxury Place.</h4>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat you have to understand this.
-      </p>
-      <iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/Bu3Doe45lcU?start=25&end=75"
-        title="YouTube video player" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen></iframe>
-      <button class="btn">BOOK NOW</button>
+    <section class="section section--intro-video bg-dark">
+      <div class="section--intro-video__background-1"></div>
+      <div class="section--intro-video__background-2"></div>
+      <div class="section--intro-video__container">
+        <div class="section--intro-video__info-container">
+          <span class="little-title little-title--left">INTRO VIDEO</span>
+          <h4 class="title title--left">Meet With Our Luxury Place.</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo
+            consequat you have to understand this.
+          </p>
+          <button class="btn btn--desktop">BOOK NOW</button>
+        </div>
+        <div class="section__iframe-container">
+          <iframe src="https://www.youtube-nocookie.com/embed/Bu3Doe45lcU?start=25&end=75" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+          <button class="btn btn--mobile">BOOK NOW</button>
+        </div>
+      </div>
     </section>
     <section class="core-menu-section">
       <article class="core-article">
         <span class="little-title">FACILITIES</span>
         <h5 class="title">Core Features</h5>
+        <div class="core-article__row">
+          <div class="core-article__container core-article__container--light bg--golden">
+            <img class="core-article__img" src="./assets/icons/stars-icon.svg" alt="Rate with stars icon">
+            <p class="title title--30 title--left">Have High Rating</p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+              et
+              dolore
+              magna..
+            </p>
+          </div>
+          <div class="core-article__container core-article__container--light bg--golden">
+            <img class="core-article__img" src="./assets/icons/stars-icon.svg" alt="Rate with stars icon">
+            <p class="title title--30 title--left">Have High Rating</p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+              et
+              dolore
+              magna..
+            </p>
+          </div>
+          <div class="core-article__container core-article__container--light bg--golden">
+            <img class="core-article__img" src="./assets/icons/stars-icon.svg" alt="Rate with stars icon">
+            <p class="title title--30 title--left">Have High Rating</p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+              et
+              dolore
+              magna..
+            </p>
+          </div>
+        </div>
+        <div class="core-article__row">
+          <div class="core-article__container core-article__container--light bg--golden">
+            <img class="core-article__img" src="./assets/icons/stars-icon.svg" alt="Rate with stars icon">
+            <p class="title title--30 title--left">Have High Rating</p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+              et
+              dolore
+              magna..
+            </p>
+          </div>
+          <div class="core-article__container core-article__container--light bg--golden">
+            <img class="core-article__img" src="./assets/icons/stars-icon.svg" alt="Rate with stars icon">
+            <p class="title title--30 title--left">Have High Rating</p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+              et
+              dolore
+              magna..
+            </p>
+          </div>
+          <div class="core-article__container core-article__container--light bg--golden">
+            <img class="core-article__img" src="./assets/icons/stars-icon.svg" alt="Rate with stars icon">
+            <p class="title title--30 title--left">Have High Rating</p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+              et
+              dolore
+              magna..
+            </p>
+          </div>
+        </div>
         <div class="swiper swiper--core-features">
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
@@ -282,94 +373,168 @@
         </div>
       </article>
       <article class="food-article">
-        <img class="food-article__donut" src="./assets/icons/donut.svg" alt="">
-        <span class="little-title little-title--left">MENU</span>
-        <h6 class="title title--left">Our Foods Menu</h6>
-        <div class="swiper swiper--food-menu">
-          <!-- Additional required wrapper -->
-          <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide">
-              <div class="food-article__menu-container">
-                <div class="food-article__food-container">
-                  <img class="menu-img" src="./assets/images/eggs-bacon.jpg" alt="">
-                  <div>
-                    <span class="title title--24">Eggs & Bacon</span>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.
-                    </p>
-                  </div>
-                </div>
-                <div class="food-article__food-container">
-                  <img class="menu-img" src="./assets/images/eggs-bacon.jpg" alt="">
-                  <div>
-                    <span class="title title--24">Tea or Coffe</span>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.
-                    </p>
-                  </div>
-                </div>
-                <div class="food-article__food-container">
-                  <img class="menu-img" src="./assets/images/eggs-bacon.jpg" alt="">
-                  <div>
-                    <span class="title title--24">Chia Oatmeal</span>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.
-                    </p>
+        <div class="food-article__container">
+          <img class="food-article__donut" src="./assets/icons/donut.svg" alt="">
+          <span class="little-title little-title--left">MENU</span>
+          <h6 class="title title--left">Our Foods Menu</h6>
+          <div style="max-width: 1170px;margin:auto;">
+            <div class="swiper swiper--food-menu--desktop">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="food-article__menu-container">
+                    <div class="food-article__col">
+                      <div class="food-article__food-container">
+                        <img class="menu-img" src="./assets/images/eggs-bacon.jpg" alt="">
+                        <div>
+                          <span class="title title--24">Eggs & Bacon</span>
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="food-article__food-container">
+                        <img class="menu-img" src="./assets/images/eggs-bacon.jpg" alt="">
+                        <div>
+                          <span class="title title--24">Tea or Coffe</span>
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="food-article__food-container">
+                        <img class="menu-img" src="./assets/images/eggs-bacon.jpg" alt="">
+                        <div>
+                          <span class="title title--24">Chia Oatmeal</span>
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="food-article__col">
+                      <div class="food-article__food-container">
+                        <img class="menu-img" src="./assets/images/eggs-bacon.jpg" alt="">
+                        <div>
+                          <span class="title title--24">Eggs & Bacon</span>
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="food-article__food-container">
+                        <img class="menu-img" src="./assets/images/eggs-bacon.jpg" alt="">
+                        <div>
+                          <span class="title title--24">Tea or Coffe</span>
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="food-article__food-container">
+                        <img class="menu-img" src="./assets/images/eggs-bacon.jpg" alt="">
+                        <div>
+                          <span class="title title--24">Chia Oatmeal</span>
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="swiper-slide">
-              <div class="food-article__menu-container">
-                <div class="food-article__food-container">
-                  <img class="menu-img" src="./assets/images/eggs-bacon.jpg" alt="">
-                  <div>
-                    <span class="title title--24">Eggs & Bacon</span>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.
-                    </p>
+            <div class="swiper swiper--food-menu">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <div class="food-article__menu-container">
+                    <div class="food-article__food-container">
+                      <img class="menu-img" src="./assets/images/eggs-bacon.jpg" alt="">
+                      <div>
+                        <span class="title title--24">Eggs & Bacon</span>
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="food-article__food-container">
+                      <img class="menu-img" src="./assets/images/eggs-bacon.jpg" alt="">
+                      <div>
+                        <span class="title title--24">Tea or Coffe</span>
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="food-article__food-container">
+                      <img class="menu-img" src="./assets/images/eggs-bacon.jpg" alt="">
+                      <div>
+                        <span class="title title--24">Chia Oatmeal</span>
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.
+                        </p>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div class="food-article__food-container">
-                  <img class="menu-img" src="./assets/images/eggs-bacon.jpg" alt="">
-                  <div>
-                    <span class="title title--24">Tea or Coffe</span>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.
-                    </p>
-                  </div>
-                </div>
-                <div class="food-article__food-container">
-                  <img class="menu-img" src="./assets/images/eggs-bacon.jpg" alt="">
-                  <div>
-                    <span class="title title--24">Chia Oatmeal</span>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.
-                    </p>
+                <div class="swiper-slide">
+                  <div class="food-article__menu-container">
+                    <div class="food-article__food-container">
+                      <img class="menu-img" src="./assets/images/eggs-bacon.jpg" alt="">
+                      <div>
+                        <span class="title title--24">Eggs & Bacon</span>
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="food-article__food-container">
+                      <img class="menu-img" src="./assets/images/eggs-bacon.jpg" alt="">
+                      <div>
+                        <span class="title title--24">Tea or Coffe</span>
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="food-article__food-container">
+                      <img class="menu-img" src="./assets/images/eggs-bacon.jpg" alt="">
+                      <div>
+                        <span class="title title--24">Chia Oatmeal</span>
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.
+                        </p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <!--<div class="swiper-pagination"></div>-->
+            </div>
+            <div class="food-article__img-container">
+              <img src="./assets/images/restaurant.jpg" alt="">
+              <img src="./assets/images/restaurant.jpg" alt="">
+              <img src="./assets/images/restaurant.jpg" alt="">
+            </div>
+            <div class="swiper swiper--food">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="./assets/images/restaurant.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="./assets/images/restaurant.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="./assets/images/restaurant.jpg" alt="">
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
             </div>
           </div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
-          <!--<div class="swiper-pagination"></div>-->
-        </div>
-        <div class="swiper swiper--food">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img src="./assets/images/restaurant.jpg" alt="">
-            </div>
-            <div class="swiper-slide">
-              <img src="./assets/images/restaurant.jpg" alt="">
-            </div>
-            <div class="swiper-slide">
-              <img src="./assets/images/restaurant.jpg" alt="">
-            </div>
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
       </article>
     </section>
     <section class="hotel-features-section bg-dark">
@@ -467,8 +632,10 @@
       </div>
     </div>
     <div class="footer__copyright-container bg-dark">
-      <span>Copyright By@Example - 2020</span>
-      <span>Terms of use | Privacy Environmental Policy</span>
+      <div class="footer__copyright-subcontainer">
+        <span>Copyright By@Example - 2020</span>
+        <span>Terms of use | Privacy Environmental Policy</span>
+      </div>
     </div>
   </footer>
 </body>

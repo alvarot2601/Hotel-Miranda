@@ -13,6 +13,7 @@
     padding-top:25px!important;
     img{
         max-height: 244px;
+        max-width: 600px;
     }
     .swiper-button-next, .swiper-button-prev{
       top:30%;
@@ -21,17 +22,28 @@
   &--food {
     margin-top: 60px;
     img{
-      height: clamp(220px, 104.68vw, 231px);
+      height: clamp(220px, 68.75vw, 300px);
+      max-width: 600px;
+      width: 100%;
+      object-fit: cover;
+      margin:auto;
     }
   }
   &--food-menu {
     margin-top: 60px;
+    &--desktop{
+      display: none!important;
+    }
   }
   
   &--rooms{
     display: flex;
     flex-direction: column;
+    &-desktop{
+      display: none;
+    }
   }
+
 }
 .swiper-pagination-bullets {
   
@@ -52,5 +64,30 @@
   background: #007aff;
 }
 
+@media screen and (min-width:1000px){
+  .swiper--food, .swiper--food-menu, .swiper--rooms{
+    display: none!important;
+  }
+  .swiper--rooms-desktop{
+    display: flex;
+    flex-direction: row;
+    gap:30px;
+    width: 100%;
+    max-width: 1170px;
+    margin: auto;
+    .swiper-slide{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row!important;
+      gap:30px;
+      justify-content: center;
+    }
+  }
+  .swiper--food-menu--desktop{
+    display: block!important;
+    max-height: 400px;
+    margin-bottom:120px;
+  }
+}
 
 

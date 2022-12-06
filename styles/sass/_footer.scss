@@ -1,7 +1,8 @@
 .footer{
+    background-image: url('../../assets/icons/footer-background.svg');
     &__box{
         padding:32px 20px 16px 20px;
-        background-image: url('../../assets/icons/footer-background.svg');
+        
     }
     &__logo{
         margin:auto;
@@ -95,5 +96,48 @@
         display: flex;
         flex-direction: column;
         gap: 16px;
+    }
+}
+
+@media screen and (min-width:1000px)
+{ 
+    .footer{
+        margin-top:120px;
+        padding: 100px 0px 0px 0px;
+        &__columns-container{
+            
+            gap:103px;
+        }
+        &__description{
+            margin-bottom:22px;
+        }
+        &__copyright-container{
+            padding:29px 10px 31px 10px;
+            gap: 16px;
+        }
+        &__copyright-subcontainer{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            max-width: 1170px;
+            margin: auto;
+            justify-content: space-between;
+        }
+        &__box{
+            padding:0px 10px;
+            display: flex;
+            flex-direction: row;
+            max-width: 1170px;
+            margin: auto;
+            
+        }
+        &__container:nth-of-type(1){
+            flex-basis:14.0625%;
+            margin-right:80px;
+        }
+        &__container:nth-of-type(2){
+            flex-basis:30.36%;
+            margin-right:130px;
+        }
     }
 }

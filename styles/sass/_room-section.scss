@@ -24,7 +24,7 @@
         width: 84%;
         padding:49px 20px 0px 20px;
         margin: auto;
-        
+        max-width:504px;
     }
     &__container--2{
         padding:49px 20px 28px 20px;
@@ -130,3 +130,14 @@
         top:50%;
     }
 }
+
+@media (min-width: 1000px) {
+    .room-section{
+        padding-top: 118px;
+        &__target-container{
+            max-width: 370px;
+            width:31%;
+          }
+        
+    }
+  }
