@@ -112,16 +112,15 @@
             margin-bottom:22px;
         }
         &__copyright-container{
-            
             padding:29px 10px 31px 10px;
-            
             gap: 16px;
         }
         &__copyright-subcontainer{
             display: flex;
             flex-direction: row;
+            width: 100%;
             max-width: 1170px;
-            width: auto;
+            margin: auto;
             justify-content: space-between;
         }
         &__box{

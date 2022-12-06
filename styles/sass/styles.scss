@@ -15,7 +15,6 @@
 @import "./room-services-list";
 @import "./founder-card";
 @import "./section-offers";
-@import "./pages/about";
 @import "./breadcrumb";
 @import "./contact-data-section";
 @import './footer';
@@ -203,7 +202,9 @@ background-image: linear-gradient(
 	max-height: 214px;
 	margin-top:16px;
 }
-
+.desktop-image-container{
+	display: none;
+}
 
 //
 @keyframes nav {
@@ -291,4 +292,16 @@ background-image: linear-gradient(
 		animation-timing-function: ease-out;
 		transform: translateX(0);
 	}
+}
+@media screen and (min-width:1000px){
+	.desktop-image-container{
+        display: flex;
+		gap: 30px;
+		margin-top:60px;
+		img{
+			width: 48.5%;
+			height: 400px;
+			object-fit: cover;
+		}
+    }
 }

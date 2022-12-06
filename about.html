@@ -1,311 +1,460 @@
 <html>
+  <head>
+    <script
+      src="https://kit.fontawesome.com/0e1893a41e.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Hotel Miranda</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./styles/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  </head>
 
-<head>
-  <script src="https://kit.fontawesome.com/0e1893a41e.js" crossorigin="anonymous"></script>
-  <title>Hotel Miranda</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="./styles/css/styles.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-</head>
+  <body>
+    <header class="header">
+      <nav class="header__nav">
+        <ul class="header__ul header__ul--1">
+          <li class="header__li">
+            <img
+              class="header__icon header__icon--1 active"
+              id="open-menu"
+              src="assets/icons/open-menu-icon.svg"
+              alt="Icon used to open menu on mobile version"
+            />
+            <img
+              id="close-menu"
+              src="assets/icons/x.svg"
+              alt=""
+              class="inactive"
+            />
+            <img class="header__h" src="assets/icons/H.svg" alt="" />
+            <img
+              class="header__logo"
+              src="assets/icons/wordmark.svg"
+              alt="Logo of the website"
+            />
+          </li>
 
-<body>
-  <header class="header">
-    <nav class="header__nav">
-      <ul class="header__ul header__ul--1">
-        <li class="header__li">
-          <img class="header__icon header__icon--1 active" id="open-menu" src="assets/icons/open-menu-icon.svg"
-            alt="Icon used to open menu on mobile version" />
-          <img id="close-menu" src="assets/icons/x.svg" alt="" class="inactive" />
-          <img class="header__h" src="assets/icons/H.svg" alt="" />
-          <img class="header__logo" src="assets/icons/wordmark.svg" alt="Logo of the website" />
-        </li>
-
-        <li class="header__li">
-          <img class="header__icon header__icon--2" src="assets/icons/user-icon.svg" alt="User icon" />
-          <img class="header__icon header__icon--3" src="assets/icons/search-icon.svg" alt="Search icon" />
-        </li>
-      </ul>
-      <ul class="header__ul header__ul--2" id="menu-list">
-        <li>
-          <a href="./about.html">About as</a>
-        </li>
-        <li>
-          <a href="./rooms.html">Rooms</a>
-        </li>
-        <li>
-          <a href="./offers.html">Offers</a>
-        </li>
-        <li>
-          <a href="./contact.html">Contact</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <section class="section header-section bg-dark">
-      <span class="little-title little-title--white little-title--left">The ULTIMATE LUXURY</span>
-      <h1>About Us</h1>
-      <div class="breadcrumb bg-light">
-        <span>Home | </span><span class="breadcrumb__gold">About</span>
-      </div>
-    </section>
-    <section class="section">
-      <iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/Bu3Doe45lcU?start=25&end=75"
-        title="YouTube video player" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen></iframe>
-      <article>
-        <h2 class="title title--32">
-          Hello. Our hotel has been present for over 20 years. We make the best for all our customers.
-        </h2>
-        <div class="section__icon-container">
-          <div class="section__icon-subcontainer">
-            <img src="./assets/icons/breakfast-icon.svg" alt="">
-            <span class="title title--12">BREAKFAST</span>
-          </div>
-          <div class="section__icon-subcontainer section__icon-subcontainer--dark">
-            <img src="./assets/icons/plane-icon.svg" alt="">
-            <span class="title title--12">AIRPORT PICKUP</span>
-          </div>
-          <div class="section__icon-subcontainer">
-            <img src="./assets/icons/city-guide-icon.svg" alt="">
-            <span class="title title--12">CITY GUIDE</span>
-          </div>
-          <div class="section__icon-subcontainer">
-            <img src="./assets/icons/luxury-room-icon.svg" alt="">
-            <span class="title title--12">LUXURY ROOM</span>
-          </div>
+          <li class="header__li">
+            <img
+              class="header__icon header__icon--2"
+              src="assets/icons/user-icon.svg"
+              alt="User icon"
+            />
+            <img
+              class="header__icon header__icon--3"
+              src="assets/icons/search-icon.svg"
+              alt="Search icon"
+            />
+          </li>
+        </ul>
+        <ul class="header__ul header__ul--2" id="menu-list">
+          <li>
+            <a href="./about.html">About as</a>
+          </li>
+          <li>
+            <a href="./rooms.html">Rooms</a>
+          </li>
+          <li>
+            <a href="./offers.html">Offers</a>
+          </li>
+          <li>
+            <a href="./contact.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="section header-section bg-dark">
+        <span class="little-title little-title--white little-title--left"
+          >The ULTIMATE LUXURY</span
+        >
+        <h1>About Us</h1>
+        <div class="breadcrumb bg-light">
+          <span>Home | </span><span class="breadcrumb__gold">About</span>
         </div>
-        <div class="section__restaurant-container">
-          <img src="./assets/images/restaurant.jpg" alt="">
-          <div class="section__restaurant-subcontainer">
-            <span class="little-title little-title--left">RESTAURANT</span>
-            <h3 class="title title--32 title--left">Get Restaurant Facilities & Many Other More</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tem por incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
-            </p>
-            <button class="btn">TAKE A TOUR</button>
-          </div>
-        </div>
-      </article>
-    </section>
-    <section class="core-menu-section core-menu-section--72 bg-dark">
-      <article class="bg-dark">
-        <span class="little-title">FACILITIES</span>
-        <h5 class="title">Core Features</h5>
-        <div class="swiper swiper--core-features">
-          <!-- Additional required wrapper -->
-          <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide">
-              <div class="core-article__container core-article__container">
-                <img class="core-article__img" src="./assets/icons/stars-icon.svg" alt="Rate with stars icon">
-                <p class="title title--left title--30">Have High Rating</p>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                  et
-                  dolore
-                  magna..
-                </p>
-              </div>
+      </section>
+      <section class="section">
+        <iframe
+          width="100%"
+          height="100%"
+          src="https://www.youtube-nocookie.com/embed/Bu3Doe45lcU?start=25&end=75"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+        <article>
+          <h2 class="title title--32">
+            Hello. Our hotel has been present for over 20 years. We make the
+            best for all our customers.
+          </h2>
+          <div class="section__icon-container">
+            <div class="section__icon-subcontainer">
+              <img src="./assets/icons/breakfast-icon.svg" alt="" />
+              <span class="title title--12">BREAKFAST</span>
             </div>
-            <div class="swiper-slide">
-              <div class="core-article__container core-article__container">
-                <img class="core-article__img" src="./assets/icons/stars-icon.svg" alt="Rate with stars icon">
-                <p class="title title--left title--30">Quite Hours</p>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                  et
-                  dolore
-                  magna..
-                </p>
-              </div>
+            <div
+              class="section__icon-subcontainer section__icon-subcontainer--dark"
+            >
+              <img src="./assets/icons/plane-icon.svg" alt="" />
+              <span class="title title--12">AIRPORT PICKUP</span>
             </div>
-            <div class="swiper-slide">
-              <div class="core-article__container core-article__container">
-                <img class="core-article__img" src="./assets/icons/stars-icon.svg" alt="Rate with stars icon">
-                <p class="title title--left title--30">Quite Hours</p>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                  et
-                  dolore
-                  magna..
-                </p>
-              </div>
+            <div class="section__icon-subcontainer">
+              <img src="./assets/icons/city-guide-icon.svg" alt="" />
+              <span class="title title--12">CITY GUIDE</span>
             </div>
-            <div class="swiper-slide">
-              <div class="core-article__container core-article__container">
-                <img class="core-article__img" src="./assets/icons/stars-icon.svg" alt="Rate with stars icon">
-                <p class="title title--left title--30">Quite Hours</p>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                  et
-                  dolore
-                  magna..
-                </p>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="core-article__container core-article__container">
-                <img class="core-article__img" src="./assets/icons/stars-icon.svg" alt="Rate with stars icon">
-                <p class="title title--left title--30">Quite Hours</p>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                  et
-                  dolore
-                  magna..
-                </p>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="core-article__container core-article__container">
-                <img class="core-article__img" src="./assets/icons/stars-icon.svg" alt="Rate with stars icon">
-                <p class="title title--left title--30">Quite Hours</p>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                  et
-                  dolore
-                  magna..
-                </p>
-              </div>
+            <div class="section__icon-subcontainer">
+              <img src="./assets/icons/luxury-room-icon.svg" alt="" />
+              <span class="title title--12">LUXURY ROOM</span>
             </div>
           </div>
-          <!-- If we need pagination -->
-          <div class="swiper-pagination"></div>
-        </div>
-      </article>
-    </section>
-    <section class="section bg-dark ">
-      <span class="little-title little-title--left">COUNTER</span>
-      <h5 class="title title--left">Some Fun Facts</h5>
-      <div class="section__fun-facts-container">
-        <div class="section__fun-fact-container">
-          <img src="./assets/icons/happy-users-icon.svg" alt="">
-          <div class="section__features-container">
-            <span class="span-3rem">8000</span>
-            <span>Happy Users</span>
+          <div class="section__restaurant-container">
+            <img src="./assets/images/restaurant.jpg" alt="" />
+            <div class="section__restaurant-subcontainer">
+              <span class="little-title little-title--left">RESTAURANT</span>
+              <h3 class="title title--32 title--left">
+                Get Restaurant Facilities & Many Other More
+              </h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tem por incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip.
+              </p>
+              <button class="btn">TAKE A TOUR</button>
+            </div>
           </div>
-          <img src="./assets/icons/right-arrow-icon.svg" alt="">
-        </div>
-        <div class="section__fun-fact-container">
-          <img src="./assets/icons/reviews-icon.svg" alt="">
-          <div class="section__features-container">
-            <span class="span-3rem">10M</span>
-            <span>Reviews & Appriciate</span>
+        </article>
+      </section>
+      <section class="core-menu-section core-menu-section--72 bg-dark">
+        <article class="bg-dark">
+          <span class="little-title">FACILITIES</span>
+          <h5 class="title">Core Features</h5>
+          <div class="core-menu-section__card-container">
+            <div class="core-article__container">
+              <img
+                class="core-article__img"
+                src="./assets/icons/stars-icon.svg"
+                alt="Rate with stars icon"
+              />
+              <p class="title title--left title--30">Have High Rating</p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna..
+              </p>
+            </div>
+            <div class="core-article__container">
+              <img
+                class="core-article__img"
+                src="./assets/icons/stars-icon.svg"
+                alt="Rate with stars icon"
+              />
+              <p class="title title--left title--30">Have High Rating</p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna..
+              </p>
+            </div>
+            <div class="core-article__container">
+              <img
+                class="core-article__img"
+                src="./assets/icons/stars-icon.svg"
+                alt="Rate with stars icon"
+              />
+              <p class="title title--left title--30">Have High Rating</p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna..
+              </p>
+            </div>
+            <div class="core-article__container">
+              <img
+                class="core-article__img"
+                src="./assets/icons/stars-icon.svg"
+                alt="Rate with stars icon"
+              />
+              <p class="title title--left title--30">Have High Rating</p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna..
+              </p>
+            </div>
+            <div class="core-article__container">
+              <img
+                class="core-article__img"
+                src="./assets/icons/stars-icon.svg"
+                alt="Rate with stars icon"
+              />
+              <p class="title title--left title--30">Have High Rating</p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna..
+              </p>
+            </div>
+            <div class="core-article__container">
+              <img
+                class="core-article__img"
+                src="./assets/icons/stars-icon.svg"
+                alt="Rate with stars icon"
+              />
+              <p class="title title--left title--30">Have High Rating</p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna..
+              </p>
+            </div>
           </div>
-          <img src="./assets/icons/right-arrow-icon.svg" alt="">
-        </div>
-        <div class="section__fun-fact-container">
-          <img src="./assets/icons/country-coverage-icon.svg" alt="">
-          <div class="section__features-container">
-            <span class="span-3rem">100</span>
-            <span>Country Coverage</span>
+          <div class="swiper swiper--core-features">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="core-article__container">
+                  <img
+                    class="core-article__img"
+                    src="./assets/icons/stars-icon.svg"
+                    alt="Rate with stars icon"
+                  />
+                  <p class="title title--left title--30">Have High Rating</p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna..
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="core-article__container">
+                  <img
+                    class="core-article__img"
+                    src="./assets/icons/stars-icon.svg"
+                    alt="Rate with stars icon"
+                  />
+                  <p class="title title--left title--30">Quite Hours</p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna..
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="core-article__container">
+                  <img
+                    class="core-article__img"
+                    src="./assets/icons/stars-icon.svg"
+                    alt="Rate with stars icon"
+                  />
+                  <p class="title title--left title--30">Quite Hours</p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna..
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="core-article__container">
+                  <img
+                    class="core-article__img"
+                    src="./assets/icons/stars-icon.svg"
+                    alt="Rate with stars icon"
+                  />
+                  <p class="title title--left title--30">Quite Hours</p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna..
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="core-article__container">
+                  <img
+                    class="core-article__img"
+                    src="./assets/icons/stars-icon.svg"
+                    alt="Rate with stars icon"
+                  />
+                  <p class="title title--left title--30">Quite Hours</p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna..
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="core-article__container">
+                  <img
+                    class="core-article__img"
+                    src="./assets/icons/stars-icon.svg"
+                    alt="Rate with stars icon"
+                  />
+                  <p class="title title--left title--30">Quite Hours</p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna..
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
           </div>
-          <img src="./assets/icons/right-arrow-icon.svg" alt="">
-        </div>
-      </div>
-      <div class="swiper swiper--food">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
+        </article>
+      </section>
+      <section class="section bg-dark">
+        <div class="section__counter">
+          <span class="little-title little-title--left">COUNTER</span>
+          <h5 class="title title--left">Some Fun Facts</h5>
+          <div class="section__fun-facts-container">
+            <div class="section__fun-fact-container">
+              <img src="./assets/icons/happy-users-icon.svg" alt="" />
+              <div class="section__features-container">
+                <span class="span-3rem">8000</span>
+                <span>Happy Users</span>
+              </div>
+              <img src="./assets/icons/right-arrow-icon.svg" alt="" />
+            </div>
+            <div class="section__fun-fact-container">
+              <img src="./assets/icons/reviews-icon.svg" alt="" />
+              <div class="section__features-container">
+                <span class="span-3rem">10M</span>
+                <span>Reviews & Appriciate</span>
+              </div>
+              <img src="./assets/icons/right-arrow-icon.svg" alt="" />
+            </div>
+            <div class="section__fun-fact-container">
+              <img src="./assets/icons/country-coverage-icon.svg" alt="" />
+              <div class="section__features-container">
+                <span class="span-3rem">100</span>
+                <span>Country Coverage</span>
+              </div>
+              <img src="./assets/icons/right-arrow-icon.svg" alt="" />
+            </div>
+          </div>
+          <div class="desktop-image-container">
+            <img src="./assets/images/restaurant.jpg" alt="">
             <img src="./assets/images/restaurant.jpg" alt="">
           </div>
-          <div class="swiper-slide">
-            <img src="./assets/images/restaurant.jpg" alt="">
-          </div>
-          <div class="swiper-slide">
-            <img src="./assets/images/restaurant.jpg" alt="">
+          <div class="swiper swiper--food">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./assets/images/restaurant.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/images/restaurant.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/images/restaurant.jpg" alt="" />
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
           </div>
         </div>
-        <div class="swiper-pagination"></div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__box">
+        <div class="footer__container">
+          <div class="footer__subcontainer footer__subcontainer--1">
+            <span>H</span>
+            <img
+              class="footer__logo"
+              src="./assets/icons/wordmark.svg"
+              alt="Hotel's logo"
+            />
+          </div>
+          <p class="footer__description">
+            Lorem ipsum dolor sit amet, consect etur adipisicing elit, sed doing
+            eius mod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitat ion ullamco laboris nisi.
+          </p>
+          <div class="footer__social-icons-container">
+            <img
+              class="footer__social-icon"
+              src="./assets/icons/facebook.svg"
+              alt=""
+            />
+            <img
+              class="footer__social-icon footer__social-icon--dark"
+              src="./assets/icons/twitter.svg"
+              alt=""
+            />
+            <img
+              class="footer__social-icon"
+              src="./assets/icons/be-icon.svg"
+              alt=""
+            />
+            <img
+              class="footer__social-icon"
+              src="./assets/icons/linkedin.svg"
+              alt=""
+            />
+            <img
+              class="footer__social-icon"
+              src="./assets/icons/youtube.svg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="footer__container">
+          <span class="title title--24 title--left">Services.</span>
+          <div class="footer__columns-container">
+            <ul class="footer__column">
+              <li>+ Restaurant & Bar</li>
+              <li>+ Swimming Pool</li>
+              <li>+ Wellness & Spa</li>
+              <li>+ Restaurant</li>
+              <li>+ Conference Room</li>
+              <li>+ Cocktail Party House</li>
+            </ul>
+            <ul class="footer__column">
+              <li>+ Gaming Zone</li>
+              <li>+ Marrige Party</li>
+              <li>+ Party Planning</li>
+              <li>+ Tour Consultancy</li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <span class="title title--24 title--left">Contact Us.</span>
+          <div class="footer__contact-columns">
+            <div class="footer__contact-container">
+              <div>
+                <img src="./assets/icons/phone-icon.svg" alt="" />
+              </div>
+              <div class="footer__contact-column">
+                <span class="footer__subtitle">Phone Number</span>
+                <span>+987 878 765 76 577</span>
+              </div>
+            </div>
+            <div class="footer__contact-container">
+              <div>
+                <img src="./assets/icons/email-icon.svg" alt="" />
+              </div>
+              <div class="footer__contact-column">
+                <span class="footer__subtitle">Phone Number</span>
+                <span>+987 878 765 76 577</span>
+              </div>
+            </div>
+            <div class="footer__contact-container">
+              <div>
+                <img src="./assets/icons/location-icon.svg" alt="" />
+              </div>
+              <div class="footer__contact-column">
+                <span class="footer__subtitle">Phone Number</span>
+                <span>+987 878 765 76 577</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </section>
-  </main>
-  <footer class="footer">
-    <div class="footer__box">
-      <div class="footer__container">
-        <div class="footer__subcontainer footer__subcontainer--1">
-          <span>H</span>
-          <img class="footer__logo" src="./assets/icons/wordmark.svg" alt="Hotel's logo">
-        </div>
-        <p class="footer__description">
-          Lorem ipsum dolor sit amet, consect etur adipisicing elit, sed doing eius mod tempor incididunt ut labore et
-          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitat ion ullamco laboris nisi.
-        </p>
-        <div class="footer__social-icons-container">
-          <img class="footer__social-icon" src="./assets/icons/facebook.svg" alt="">
-          <img class="footer__social-icon footer__social-icon--dark" src="./assets/icons/twitter.svg" alt="">
-          <img class="footer__social-icon" src="./assets/icons/be-icon.svg" alt="">
-          <img class="footer__social-icon" src="./assets/icons/linkedin.svg" alt="">
-          <img class="footer__social-icon" src="./assets/icons/youtube.svg" alt="">
-        </div>
+      <div class="footer__copyright-container bg-dark">
+        <span>Copyright By@Example - 2020</span>
+        <span>Terms of use | Privacy Environmental Policy</span>
       </div>
-      <div class="footer__container">
-        <span class="title title--24 title--left">Services.</span>
-        <div class="footer__columns-container">
-          <ul class="footer__column">
-            <li>+ Restaurant & Bar</li>
-            <li>+ Swimming Pool</li>
-            <li>+ Wellness & Spa</li>
-            <li>+ Restaurant</li>
-            <li>+ Conference Room</li>
-            <li>+ Cocktail Party House</li>
-          </ul>
-          <ul class="footer__column">
-            <li>+ Gaming Zone</li>
-            <li>+ Marrige Party</li>
-            <li>+ Party Planning</li>
-            <li>+ Tour Consultancy</li>
-          </ul>
-        </div>
-      </div>
-      <div>
-        <span class="title title--24 title--left">Contact Us.</span>
-        <div class="footer__contact-columns">
-          <div class="footer__contact-container">
-            <div>
-              <img src="./assets/icons/phone-icon.svg" alt="">
-            </div>
-            <div class="footer__contact-column">
-              <span class="footer__subtitle">Phone Number</span>
-              <span>+987 878 765 76 577</span>
-            </div>
-          </div>
-          <div class="footer__contact-container">
-            <div>
-              <img src="./assets/icons/email-icon.svg" alt="">
-            </div>
-            <div class="footer__contact-column">
-              <span class="footer__subtitle">Phone Number</span>
-              <span>+987 878 765 76 577</span>
-            </div>
-          </div>
-          <div class="footer__contact-container">
-            <div>
-              <img src="./assets/icons/location-icon.svg" alt="">
-            </div>
-            <div class="footer__contact-column">
-              <span class="footer__subtitle">Phone Number</span>
-              <span>+987 878 765 76 577</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="footer__copyright-container bg-dark">
-      <span>Copyright By@Example - 2020</span>
-      <span>Terms of use | Privacy Environmental Policy</span>
-    </div>
-  </footer>
-  <script src="./js/home.js"></script>
-</body>
-
+    </footer>
+    <script src="./js/home.js"></script>
+  </body>
 </html>
-<!--<div class="section__slider">
-        <img src="./assets/images/restaurant.jpg" alt="">
-        <div class="section__pagination-container">
-          <div></div>
-          <div></div>
-        </div>
-      </div>-->

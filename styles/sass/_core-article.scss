@@ -44,8 +44,16 @@
             gap:clamp(2px, 1vw, 30px);
         }
         &__container{
-            min-width: clamp(320px, 32vw, 370px);
-            height: 349px;
+            min-width: 300px;
+            width: clamp(300px, 30vw, 370px);
+            max-width: 370px;
+            height: 370px;
+            padding:60px 57px 43px 30px;
+            justify-content: center;
+        }
+        &__container::before{
+            right:0px;
+            top:0px;
         }
     }
 }
