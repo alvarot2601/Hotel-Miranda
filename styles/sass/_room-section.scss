@@ -134,5 +134,10 @@
 @media (min-width: 1000px) {
     .room-section{
         padding-top: 118px;
+        &__target-container{
+            max-width: 370px;
+            width:31%;
+          }
+        
     }
   }

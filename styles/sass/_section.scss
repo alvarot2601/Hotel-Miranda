@@ -121,8 +121,8 @@
             gap:42px;
         }
         &__icon-subcontainer{
-            width: 200px;
-            height:200px;
+            width: clamp(152px, 15.2vw, 200px);
+            height: clamp(152px, 15.2vw, 200px);
         }
         &__fun-facts-container{
             flex-direction: row;

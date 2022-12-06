@@ -39,7 +39,11 @@
   &--rooms{
     display: flex;
     flex-direction: column;
+    &-desktop{
+      display: none;
+    }
   }
+
 }
 .swiper-pagination-bullets {
   
@@ -61,11 +65,23 @@
 }
 
 @media screen and (min-width:1000px){
-  .swiper--food{
+  .swiper--food, .swiper--food-menu, .swiper--rooms{
     display: none!important;
   }
-  .swiper--food-menu{
-    display: none!important;
+  .swiper--rooms-desktop{
+    display: flex;
+    flex-direction: row;
+    gap:30px;
+    width: 100%;
+    max-width: 1170px;
+    margin: auto;
+    .swiper-slide{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row!important;
+      gap:30px;
+      justify-content: center;
+    }
   }
   .swiper--food-menu--desktop{
     display: block!important;

@@ -526,8 +526,8 @@ template {
     gap: 42px;
   }
   .section__icon-subcontainer {
-    width: 200px;
-    height: 200px;
+    width: clamp(152px, 15.2vw, 200px);
+    height: clamp(152px, 15.2vw, 200px);
   }
   .section__fun-facts-container {
     flex-direction: row;
@@ -973,6 +973,10 @@ template {
 @media (min-width: 1000px) {
   .room-section {
     padding-top: 118px;
+  }
+  .room-section__target-container {
+    max-width: 370px;
+    width: 31%;
   }
 }
 .core-menu-section {
@@ -1494,6 +1498,9 @@ template {
   display: flex;
   flex-direction: column;
 }
+.swiper--rooms-desktop {
+  display: none;
+}
 
 .swiper-pagination-bullet {
   width: 20px !important;
@@ -1512,11 +1519,23 @@ template {
 }
 
 @media screen and (min-width: 1000px) {
-  .swiper--food {
+  .swiper--food, .swiper--food-menu, .swiper--rooms {
     display: none !important;
   }
-  .swiper--food-menu {
-    display: none !important;
+  .swiper--rooms-desktop {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    width: 100%;
+    max-width: 1170px;
+    margin: auto;
+  }
+  .swiper--rooms-desktop .swiper-slide {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row !important;
+    gap: 30px;
+    justify-content: center;
   }
   .swiper--food-menu--desktop {
     display: block !important;
