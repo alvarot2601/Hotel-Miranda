@@ -19,3 +19,15 @@
         z-index:-1;
     }
 }
+@media screen and (min-width:1000px){
+    .contact-data-section{
+        &__target-container{
+            display: flex;
+            flex-direction: row;
+        }
+        &__target{
+           width: 100%;
+        }
+    }
+    
+}

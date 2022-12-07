@@ -505,6 +505,9 @@ template {
     padding-top: 118px;
     padding-bottom: 120px;
   }
+  .section--48 {
+    padding-top: 68px;
+  }
   .section .form--3 {
     margin: auto;
     max-width: 1170px;
@@ -976,7 +979,7 @@ template {
   }
   .room-section__target-container {
     max-width: 370px;
-    width: 31%;
+    width: clamp(313px, 31.3vw, 370px);
   }
 }
 .core-menu-section {
@@ -1254,12 +1257,6 @@ template {
   max-height: 162px;
   object-fit: cover;
 }
-.section-offers__old-price {
-  position: absolute;
-  top: 81px;
-  right: 14px;
-  text-decoration: line-through;
-}
 .section-offers__old-price span:nth-of-type(1) {
   line-height: 25px;
   font-size: 23px;
@@ -1269,10 +1266,12 @@ template {
 .section-offers__old-price span:nth-of-type(2) {
   text-decoration: line-through;
 }
-.section-offers__new-price {
+.section-offers__old-price--mobile {
   position: absolute;
-  bottom: 15px;
+  top: 81px;
   right: 14px;
+}
+.section-offers__new-price {
   color: red;
 }
 .section-offers__new-price span:nth-of-type(1) {
@@ -1280,8 +1279,16 @@ template {
   font-size: 30px;
   font-weight: 700;
 }
+.section-offers__new-price--mobile {
+  position: absolute;
+  bottom: 15px;
+  right: 14px;
+}
 .section-offers__info-container {
   padding: 16px 20px 32px 20px;
+}
+.section-offers__price-container {
+  display: none;
 }
 .section-offers .little-title {
   margin: 0;
@@ -1293,6 +1300,62 @@ template {
   margin: 25px 0px;
 }
 
+@media screen and (min-width: 1000px) {
+  .section-offers {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+  }
+  .section-offers__card {
+    margin: auto;
+    max-width: 1170px;
+  }
+  .section-offers__img {
+    max-height: 570px;
+  }
+  .section-offers__info-container {
+    width: 89.74%;
+    max-width: 1050px;
+    margin: auto;
+    margin-top: -60px;
+    position: relative;
+    z-index: 1;
+    padding: 55px 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+  }
+  .section-offers__row {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+  }
+  .section-offers__row--2 {
+    border: none;
+    gap: 57px;
+  }
+  .section-offers__row--2 .btn--desktop {
+    margin-top: 12px;
+  }
+  .section-offers__row--2 .room-services-list {
+    margin: 0;
+    width: 50%;
+  }
+  .section-offers__description {
+    width: 60%;
+  }
+  .section-offers__price-container {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+  }
+  .section-offers__old-price--mobile, .section-offers__new-price--mobile {
+    display: none;
+  }
+  .section-offers .title {
+    margin: 15px 0px 0px 0px;
+  }
+}
 .breadcrumb {
   padding: 16px 24px;
   position: absolute;
@@ -1325,6 +1388,15 @@ template {
   z-index: -1;
 }
 
+@media screen and (min-width: 1000px) {
+  .contact-data-section__target-container {
+    display: flex;
+    flex-direction: row;
+  }
+  .contact-data-section__target {
+    width: 100%;
+  }
+}
 .footer {
   background-image: url("../../assets/icons/footer-background.svg");
 }
@@ -1711,12 +1783,22 @@ ul {
   }
 }
 @media screen and (min-width: 1000px) {
+  .btn--mobile {
+    display: none;
+  }
+  .btn--mobile .btn--desktop {
+    display: block;
+  }
   .desktop-image-container {
     display: flex;
+    max-width: 1170px;
+    margin: auto;
     gap: 30px;
+  }
+  .desktop-image-container--fun-facts {
     margin-top: 60px;
   }
-  .desktop-image-container img {
+  .desktop-image-container--fun-facts img {
     width: 48.5%;
     height: 400px;
     object-fit: cover;
