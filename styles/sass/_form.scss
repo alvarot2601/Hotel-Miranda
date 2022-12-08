@@ -16,6 +16,7 @@
     }
     &--2{
         text-align: center;
+        margin-top:60px;
         input{
             padding:25px 21px 23px 21px;
             background-color: #F8F8F8;
@@ -24,6 +25,7 @@
             margin-bottom:17px;
             border-radius: 10px;
             border:1px solid #777777;
+            width: 100%;
         }
         ::placeholder{
             color:#777777;
@@ -71,6 +73,23 @@
         margin-bottom:0px;
         width:17.28vw;
         max-width: 330px;
+        }
+    }
+    .form--2{
+        margin-top:130px;
+        display: flex;
+        flex-direction: row;
+        gap:30px;
+        flex-wrap: wrap;
+        justify-content: center;
+        input, textarea{
+            margin:0px;
+        }
+        input{
+            width: 40%;
+        }
+        textarea{
+            width: 82%;
         }
     }
     .form__input-container{

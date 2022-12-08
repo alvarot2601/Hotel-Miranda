@@ -3,7 +3,15 @@
     position:absolute;
     right: 20px;
     bottom:0px;
+    text-align: center;
     &__gold{
         color: #BEAD8E;
+    }
+}
+@media screen and (min-width:1000px){
+    .breadcrumb{
+        right:0;
+        bottom:0px;
+        max-width: 223px;
     }
 }

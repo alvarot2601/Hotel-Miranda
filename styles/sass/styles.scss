@@ -294,14 +294,27 @@ background-image: linear-gradient(
 	}
 }
 @media screen and (min-width:1000px){
+	.btn--mobile{
+		display: none;
+		.btn--desktop{
+			display: block;
+		}
+	}
 	.desktop-image-container{
         display: flex;
-		gap: 30px;
-		margin-top:60px;
-		img{
-			width: 48.5%;
-			height: 400px;
-			object-fit: cover;
+		max-width: 1170px;
+		margin:auto;
+		gap:30px;
+		&--fun-facts{
+			margin-top:60px;
+			img{
+				width: 48.5%;
+				height: 400px;
+				object-fit: cover;
+			}
+		}
+		&--popular-rooms{
 		}
     }
+	
 }

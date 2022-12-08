@@ -11,11 +11,7 @@
         max-height: 162px;
         object-fit: cover;
     }
-    &__old-price{
-        position: absolute;
-        top:81px;
-        right:14px;
-        text-decoration: line-through;
+    &__old-price{   
         span:nth-of-type(1){
             line-height: 25px;
             font-size:23px;
@@ -26,22 +22,29 @@
             text-decoration: line-through;
         }
     }
-    &__new-price{
+    &__old-price--mobile{
         position: absolute;
-        bottom:15px;
+        top:81px;
         right:14px;
+    }
+    &__new-price{
         color:red;
-        
         span:nth-of-type(1){
             line-height: 32px;
             font-size:30px;
             font-weight: 700;
         }
-        span:nth-of-type(2){
-        }
+    }
+    &__new-price--mobile{
+        position: absolute;
+        bottom:15px;
+        right:14px;
     }
     &__info-container{
         padding:16px 20px 32px 20px;
+    }
+    &__price-container{
+        display: none;
     }
     .little-title{
         margin:0;
@@ -52,4 +55,62 @@
     .room-services-list{
         margin:25px 0px;
     }
+}
+@media screen and (min-width:1000px){
+    .section-offers{
+        display: flex;
+        flex-direction: column;
+        gap:60px;
+        &__card{
+            margin: auto;
+            max-width: 1170px;
+        }
+        &__img{
+            max-height: 570px;
+        }
+        &__info-container{
+            width: 89.74%;
+            max-width: 1050px;
+            margin: auto;
+            margin-top:-60px;
+            position: relative;
+            z-index: 1;
+            padding:55px 60px;
+            display: flex;
+            flex-direction: column;
+            gap: 36px;
+        }
+        &__row{
+            display: flex;
+            justify-content: space-between;
+            border-bottom:1px solid black;
+            //padding-bottom:31px;
+        }
+        &__row--2{
+            border:none;
+            gap:57px;
+            .btn--desktop{
+                margin-top:12px;
+            }
+            .room-services-list{
+                margin:0;
+                width: 50%;
+            }
+        }
+        &__description{
+            width: 60%;
+        }
+        &__price-container{
+            display: flex;
+            flex-direction: column;
+            gap:13px;
+        }
+        &__old-price--mobile, &__new-price--mobile{
+            display: none;
+        }
+        .title{
+            margin:15px 0px 0px 0px;
+        }
+    }
+    
 }
