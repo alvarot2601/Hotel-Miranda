@@ -14,9 +14,12 @@
 }
 @media (min-width: 1000px) {
     .header-section{
+        padding:158px 0px 0px 0px;
         &__container{
             max-width: 1170px;
             margin: auto;
+            min-height: 195px;
+            position: relative;
         }
         .btn:nth-of-type(1){
             margin-right: 30px;   

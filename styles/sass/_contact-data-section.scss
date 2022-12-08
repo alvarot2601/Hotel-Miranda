@@ -2,10 +2,10 @@
     padding:24px 20px 14px 20px;
     display: flex;
     flex-direction: column;
-    gap: 47px;
     &__target{
         padding:52px 0px 56px 0px;
         position: relative;
+        margin-bottom:24px
     }
     &__info{
         display: flex;
@@ -21,12 +21,21 @@
 }
 @media screen and (min-width:1000px){
     .contact-data-section{
+        padding-top:120px;
+        max-width: 1170px;
+        margin: auto;
+        gap:0px;
         &__target-container{
             display: flex;
             flex-direction: row;
+            gap:35px;
         }
         &__target{
            width: 100%;
+        }
+        iframe{
+            min-height: clamp(598px, 59.8vw, 700px);
+            margin:0px;
         }
     }
     

@@ -394,9 +394,14 @@ template {
 }
 
 @media (min-width: 1000px) {
+  .header-section {
+    padding: 158px 0px 0px 0px;
+  }
   .header-section__container {
     max-width: 1170px;
     margin: auto;
+    min-height: 195px;
+    position: relative;
   }
   .header-section .btn:nth-of-type(1) {
     margin-right: 30px;
@@ -1139,6 +1144,7 @@ template {
 }
 .form--2 {
   text-align: center;
+  margin-top: 60px;
 }
 .form--2 input {
   padding: 25px 21px 23px 21px;
@@ -1148,6 +1154,7 @@ template {
   margin-bottom: 17px;
   border-radius: 10px;
   border: 1px solid #777777;
+  width: 100%;
 }
 .form--2 ::placeholder {
   color: #777777;
@@ -1192,6 +1199,23 @@ template {
     margin-bottom: 0px;
     width: 17.28vw;
     max-width: 330px;
+  }
+  .form--2 {
+    margin-top: 130px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .form--2 input, .form--2 textarea {
+    margin: 0px;
+  }
+  .form--2 input {
+    width: 40%;
+  }
+  .form--2 textarea {
+    width: 82%;
   }
   .form__input-container {
     display: flex;
@@ -1361,20 +1385,28 @@ template {
   position: absolute;
   right: 20px;
   bottom: 0px;
+  text-align: center;
 }
 .breadcrumb__gold {
   color: #BEAD8E;
 }
 
+@media screen and (min-width: 1000px) {
+  .breadcrumb {
+    right: 0;
+    bottom: 0px;
+    max-width: 223px;
+  }
+}
 .contact-data-section {
   padding: 24px 20px 14px 20px;
   display: flex;
   flex-direction: column;
-  gap: 47px;
 }
 .contact-data-section__target {
   padding: 52px 0px 56px 0px;
   position: relative;
+  margin-bottom: 24px;
 }
 .contact-data-section__info {
   display: flex;
@@ -1389,12 +1421,23 @@ template {
 }
 
 @media screen and (min-width: 1000px) {
+  .contact-data-section {
+    padding-top: 120px;
+    max-width: 1170px;
+    margin: auto;
+    gap: 0px;
+  }
   .contact-data-section__target-container {
     display: flex;
     flex-direction: row;
+    gap: 35px;
   }
   .contact-data-section__target {
     width: 100%;
+  }
+  .contact-data-section iframe {
+    min-height: clamp(598px, 59.8vw, 700px);
+    margin: 0px;
   }
 }
 .footer {
