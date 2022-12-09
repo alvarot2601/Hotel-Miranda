@@ -63,10 +63,12 @@
         gap:60px;
         &__card{
             margin: auto;
+            width: 100%;
             max-width: 1170px;
         }
         &__img{
             max-height: 570px;
+            
         }
         &__info-container{
             width: 89.74%;

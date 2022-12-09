@@ -356,6 +356,9 @@ template {
   gap: 23.75px;
   padding: 32px 0px 26px 21px;
 }
+.header__ul--desktop {
+  display: none;
+}
 .header__icon--2 {
   margin-right: 28px;
 }
@@ -377,7 +380,77 @@ template {
 .header__logo {
   height: 27.77px;
 }
+.header__container-desktop {
+  display: none;
+}
 
+@media screen and (min-width: 1000px) {
+  .header {
+    background-color: #000;
+    padding: 11px 0px 0px 0px;
+    height: 100px;
+    color: #FFF;
+  }
+  .header__logo {
+    width: 137px;
+    height: 56px;
+  }
+  .header__h {
+    padding: 18px 25px;
+    box-sizing: content-box;
+    width: 31px;
+    height: 44px;
+    margin-right: 28px;
+  }
+  .header__icon {
+    border: 1px solid black;
+    padding: 20px;
+    box-sizing: content-box;
+    width: 21px;
+    height: 21px;
+  }
+  .header__ul {
+    display: none;
+  }
+  .header__container-desktop {
+    display: flex;
+    flex-direction: column;
+    max-width: 1420px;
+    min-width: 950px;
+    width: 90%;
+    margin: auto;
+  }
+  .header__ul--desktop {
+    display: flex;
+    align-items: center;
+    height: 120px;
+    padding: 20px clamp(80px, 8vw, 120px) 20px 20px;
+    background-color: white;
+    justify-content: space-between;
+  }
+  .header__ul--desktop div {
+    display: flex;
+    align-items: center;
+  }
+  .header__ul--desktop div:nth-of-type(2) {
+    gap: 30px;
+  }
+  .header__ul--desktop li {
+    display: flex;
+  }
+  .header__ul--desktop li:nth-of-type(1) {
+    gap: clamp(80px, 8vw, 117px);
+  }
+  .header__ul--desktop li:nth-of-type(2) {
+    gap: 20px;
+  }
+  .header__ul--desktop li:nth-of-type(3) {
+    gap: 20px;
+  }
+  .header__ul--desktop .header__icon {
+    margin: 0;
+  }
+}
 .header-section {
   padding: 75px 20px 76px 20px;
   color: #ffffff;
@@ -397,8 +470,13 @@ template {
   .header-section {
     padding: 158px 0px 0px 0px;
   }
+  .header-section--1 {
+    padding-top: 178px;
+    padding-bottom: 123px;
+  }
   .header-section__container {
     max-width: 1170px;
+    width: 90%;
     margin: auto;
     min-height: 195px;
     position: relative;
@@ -510,6 +588,10 @@ template {
     padding-top: 118px;
     padding-bottom: 120px;
   }
+  .section__container {
+    max-width: 1170px;
+    margin: auto;
+  }
   .section--48 {
     padding-top: 68px;
   }
@@ -525,6 +607,7 @@ template {
     flex-direction: row !important;
     padding: 40px 42px;
     gap: 57px;
+    box-shadow: 0px 14px 24px rgba(184, 184, 184, 0.1);
   }
   .section__restaurant-container img {
     width: 50%;
@@ -582,6 +665,7 @@ template {
   }
   .section--intro-video {
     position: relative;
+    padding: 130px 0px 133px 0px;
   }
   .section--intro-video__background-1 {
     width: 70.1%;
@@ -597,7 +681,9 @@ template {
     background-color: #AD9D82;
   }
   .section--intro-video__container {
-    height: 100%;
+    width: 90%;
+    max-width: 1170px;
+    margin: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -606,7 +692,6 @@ template {
   }
   .section--intro-video__info-container {
     width: 50%;
-    min-width: clamp(570px, 50.7vw, 688px);
   }
   .section__iframe-container {
     min-width: 370px;
@@ -621,6 +706,7 @@ template {
   }
   .section__iframe-container iframe {
     max-height: clamp(300px, 30vw, 460px);
+    min-height: 300px;
   }
   .section .btn--desktop {
     display: block;
@@ -688,6 +774,9 @@ template {
 .core-article__container--light::before {
   content: url("../../assets/icons/01.svg");
 }
+.core-article__row {
+  display: none;
+}
 
 @media screen and (min-width: 1000px) {
   .core-article {
@@ -699,12 +788,15 @@ template {
   .core-article__row {
     display: flex;
     justify-content: space-around;
-    gap: clamp(2px, 1vw, 30px);
+    gap: 30px;
+    width: 90%;
+    margin: auto;
+    max-width: 1170px;
   }
   .core-article__container {
-    min-width: 300px;
-    width: clamp(300px, 30vw, 370px);
-    max-width: 370px;
+    min-width: clamp(300px, 30vw, 370px);
+    width: 100%;
+    max-width: 300px;
     height: 370px;
     padding: 60px 57px 43px 30px;
     justify-content: center;
@@ -822,7 +914,7 @@ template {
   line-height: 30px;
 }
 .title--28 {
-  font-size: clamp(19.5px, 5.09vw, 36px);
+  font-size: clamp(19.5px, 5.09vw, 22.4px);
   line-height: 24px;
 }
 .title--24 {
@@ -889,7 +981,6 @@ template {
 }
 .room-section__box {
   position: relative;
-  min-height: 460px;
 }
 .room-section__img {
   height: 218px;
@@ -911,10 +1002,8 @@ template {
 }
 .room-section__container--absolute {
   padding: 20px;
-  position: absolute;
-  top: 200px;
-  left: 0;
-  right: 0;
+  position: inherit;
+  margin-top: -30px;
   z-index: 2;
 }
 .room-section__description {
@@ -936,11 +1025,8 @@ template {
   width: 84%;
   min-width: 256px;
   max-width: 310px;
-  background-image: linear-gradient(125deg, hsl(0deg, 0%, 100%) 0%, hsl(0deg, 0%, 100%) 13%, hsl(0deg, 0%, 99%) 18%, hsl(0deg, 0%, 99%) 23%, hsl(0deg, 0%, 98%) 27%, hsl(0deg, 0%, 98%) 30%, hsl(0deg, 0%, 97%) 33%, hsl(0deg, 0%, 97%) 37%, hsl(0deg, 0%, 96%) 40%, hsl(0deg, 0%, 96%) 43%, hsl(0deg, 0%, 96%) 46%, hsl(0deg, 0%, 96%) 49%, hsl(0deg, 0%, 96%) 51%, hsl(0deg, 0%, 96%) 54%, hsl(0deg, 0%, 96%) 57%, hsl(0deg, 0%, 96%) 60%, hsl(0deg, 0%, 97%) 63%, hsl(0deg, 0%, 97%) 67%, hsl(0deg, 0%, 98%) 70%, hsl(0deg, 0%, 98%) 73%, hsl(0deg, 0%, 99%) 77%, hsl(0deg, 0%, 99%) 82%, hsl(0deg, 0%, 100%) 87%, hsl(0deg, 0%, 100%) 100%);
-  position: absolute;
-  top: -25px;
-  left: 0;
-  right: 0;
+  position: inherit;
+  margin-bottom: -30px;
   padding: 18px 26px;
   display: flex;
   justify-content: space-between;
@@ -961,6 +1047,8 @@ template {
 .room-section__target-container {
   position: relative;
   margin-bottom: 24px;
+  max-width: 600px;
+  margin: auto;
 }
 .room-section__target {
   display: flex;
@@ -982,9 +1070,12 @@ template {
   .room-section {
     padding-top: 118px;
   }
+  .room-section__container {
+    text-align: center;
+  }
   .room-section__target-container {
     max-width: 370px;
-    width: clamp(313px, 31.3vw, 370px);
+    width: clamp(300px, 30vw, 370px);
   }
 }
 .core-menu-section {
@@ -1193,12 +1284,23 @@ template {
     gap: 30px;
     align-items: center;
     gap: 11vw;
+    max-width: 1170px;
+    margin: auto;
+    width: 90%;
   }
   .form--3 input {
     margin-top: 0px;
     margin-bottom: 0px;
     width: 17.28vw;
     max-width: 330px;
+  }
+  .form--3 .form__input-container {
+    display: flex;
+    flex-direction: row;
+  }
+  .form--3 .form__input-container div {
+    display: flex;
+    flex-direction: column;
   }
   .form--2 {
     margin-top: 130px;
@@ -1332,6 +1434,7 @@ template {
   }
   .section-offers__card {
     margin: auto;
+    width: 100%;
     max-width: 1170px;
   }
   .section-offers__img {
@@ -1583,9 +1686,6 @@ template {
   display: flex;
   flex-direction: column;
 }
-.swiper--room {
-  padding-top: 25px !important;
-}
 .swiper--room img {
   max-height: 244px;
   max-width: 600px;
@@ -1751,6 +1851,11 @@ ul {
 
 .desktop-image-container {
   display: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
 }
 
 @keyframes nav {
