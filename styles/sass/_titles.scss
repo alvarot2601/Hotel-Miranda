@@ -1,7 +1,7 @@
 .title{
     @include general-title;
     //cambiar max
-    font-size:clamp(39px, 12.1875vw, 50px);
+    font-size:clamp(30px, 3.9vw, 41px);
     z-index: 1;
     position: relative;
     display: block;
@@ -58,7 +58,7 @@
         text-align: left;
     }
     &--border{
-        border-bottom: 1px solid black;
+        border-bottom: 1px solid #F1F1F1;
         padding-bottom: 13px;
     }
 }

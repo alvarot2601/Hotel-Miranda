@@ -9,6 +9,10 @@
         margin:auto;
         display: block;
     }
+    &--amenities{
+        padding-top:60px;
+        padding-bottom: 0px;
+    }
     &__60{
         padding-top:60px;
         padding-bottom: 0px;
@@ -31,7 +35,13 @@
         height: 270px;
         iframe{
             width: 100%;
+            margin:32px 0px;
             height: 100%;
+        }
+    }
+    &__container{
+        iframe{
+            margin-bottom: 36px;
         }
     }
     &__icon-container{
@@ -51,6 +61,9 @@
         width:clamp(130px, 40.6vw, 158px);
         height:clamp(130px, 40.6vw, 158px);
     }
+    &__icon-subcontainer--desktop{
+        display: none;
+    }
     &__icon-subcontainer--dark{
         background-color: #BEAD8E;
         color:#FFFFFF;
@@ -63,7 +76,6 @@
         gap:32px;
         h3{
             margin:22px 0px;
-            font-size: clamp(36px, 11.25vw, 72px);
         }
         img{
             min-height: 14.5rem;
@@ -94,18 +106,40 @@
         flex-direction: column;
         gap:0px;
     }
+    &--desktop{
+        display: none;
+    }
 }
 @media (min-width: 1000px) {
     .section{
         //width: 61%;
         padding-top:118px;
         padding-bottom: 120px;
+        &--desktop{
+            display: flex;
+            gap:30px;
+            
+        }
+        &__icon-subcontainer--desktop{
+            display: flex;
+        }
         &__container{
             max-width: 1170px;
             margin: auto;
         }
         &--48{
             padding-top:68px;
+        }
+        &__60{
+            padding: 47px 50px 47px 50px;
+            max-width: 770px;
+            margin-top:86px;
+        }
+        &__related-rooms{
+            padding:0px;
+            margin-top:74px;
+            max-width: 770px;
+            margin-left:20px;
         }
         .form--3{
             margin:auto;
@@ -148,8 +182,10 @@
         }
         &--about-us{
             position: relative;
-            padding-bottom:0px;
-            
+            padding-bottom:120px;
+            .little-title{
+                z-index: 1;
+            }
             &__container{
                 margin:auto;
                 max-width: 1170px;
@@ -165,7 +201,7 @@
             }
             &__rectangle{
                 position: absolute;
-                top:232px;
+                top:310px;
                 right: 0px;
                 height: 610px;
                 width: 56.45%;
@@ -226,8 +262,16 @@
                 min-height: 300px;
             }
         }
+        &--amenities{
+            max-width: 1170px;
+            margin:auto;
+            padding:0px;
+        }
+        &__amenities-container{
+            padding: 47px 49px 52px 49px;
+            max-width: 770px;
+        }
         .btn--desktop{
-            display: block;
             margin-top:23px;
         }
         .btn--mobile{

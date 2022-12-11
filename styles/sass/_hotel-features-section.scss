@@ -22,5 +22,16 @@
         justify-content: center;
         gap:92px;
         padding:80px;
+        article{
+            display: flex;
+            flex-direction: column;
+            gap:29px;
+            
+        }
+        article:last-child{
+            img{
+                margin-top:0px;
+            }
+        }
     }
 }

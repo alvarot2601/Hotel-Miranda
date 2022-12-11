@@ -196,7 +196,9 @@ background-image: linear-gradient(
 .room-details-img{
 	width: 100%;
 	max-height: 214px;
+	margin:auto;
 	margin-top:16px;
+	max-width: 500px;
 }
 .desktop-image-container{
 	display: none;
@@ -205,6 +207,10 @@ a{
 	text-decoration: none;
 	color: #000;
 }
+.btn--desktop, .p--desktop{
+	display: none;
+}
+
 //
 @keyframes nav {
 	0% {
@@ -293,6 +299,17 @@ a{
 	}
 }
 @media screen and (min-width:1000px){
+	.room-details-img{
+		max-height: 490px;
+		margin-top:0px;
+		max-width: 770px;
+	}
+	.p--desktop{
+		display: block;
+	}
+	.p--mobile{
+		display: none;
+	}
 	.btn--mobile{
 		display: none;
 		.btn--desktop{
@@ -311,8 +328,6 @@ a{
 				height: 400px;
 				object-fit: cover;
 			}
-		}
-		&--popular-rooms{
 		}
     }
 	

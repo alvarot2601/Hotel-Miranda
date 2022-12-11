@@ -66,6 +66,9 @@
   &__container-desktop{
     display: none;
   }
+  &__p-desktop{
+    margin-bottom:10px;
+  }
 }
 @media screen and (min-width:1000px){
   .header{

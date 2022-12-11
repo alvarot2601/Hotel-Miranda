@@ -30,6 +30,31 @@
   }
   &--food-menu {
     margin-top: 60px;
+    .swiper-wrapper{
+      //padding-bottom: 90px!important;
+    }
+    .swiper-btn-container{
+      position: relative;
+      margin-top:30px;
+      display: flex;
+      gap:46px;
+      justify-content: flex-end;
+      width: 100%;
+    }
+    .swiper-button-next, .swiper-button-prev{
+      position: relative;
+    }
+    .swiper-button-next::after, .swiper-button-prev::after{
+      content:'';
+    }
+    button{
+      padding:13px 15px;
+      border:none;
+    }
+    button:hover{
+      background-color: #BEAD8E;
+      color: #FFF;
+    }
     &--desktop{
       display: none!important;
     }
@@ -38,6 +63,13 @@
   &--rooms{
     display: flex;
     flex-direction: column;
+    .swiper-button-next, .swiper-button-prev{
+      top:28%!important;
+    }
+    .swiper-button-next::after, .swiper-button-prev::after{
+      padding:5px 15px;
+      background:#FFF;
+    }
     &-desktop{
       display: none;
     }
@@ -64,8 +96,32 @@
 }
 
 @media screen and (min-width:1000px){
-  .swiper--food, .swiper--food-menu, .swiper--rooms{
+  .swiper--food, .swiper--food-menu, .swiper--rooms, .swiper--rooms2{
     display: none!important;
+  }
+  .swiper--room {
+    .swiper-wrapper{
+      
+    }
+    .swiper-slide{
+      width: 40%;
+      .room-section__icon-list, .room-section__container{
+        display: none;
+      }
+    }
+    .swiper-slide-active{
+      .room-section__icon-list, .room-section__container{
+        display: flex;
+      }
+      .room-section__container{
+        flex-direction: column;
+      }
+    }
+    .room-section__img{
+        max-height: 500px;
+        max-width: 770px;
+        height: clamp(260px, 26vw, 500px);
+    }
   }
   .swiper--rooms-desktop{
     display: flex;

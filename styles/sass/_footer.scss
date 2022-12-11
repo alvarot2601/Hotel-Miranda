@@ -97,6 +97,10 @@
         flex-direction: column;
         gap: 16px;
     }
+    &__copyright-subcontainer{
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 @media screen and (min-width:1000px)
@@ -116,7 +120,6 @@
             gap: 16px;
         }
         &__copyright-subcontainer{
-            display: flex;
             flex-direction: row;
             width: 100%;
             max-width: 1170px;
