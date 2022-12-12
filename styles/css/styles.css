@@ -604,6 +604,9 @@ template {
     padding-top: 118px;
     padding-bottom: 120px;
   }
+  .section__restaurant-subcontainer .title--32 {
+    font-size: clamp(27px, 2.7vw, 34px);
+  }
   .section--desktop {
     display: flex;
     gap: 30px;
@@ -946,14 +949,13 @@ template {
 }
 .title {
   font-weight: 600;
-  font-size: clamp(30px, 3.9vw, 41px);
+  font-size: clamp(30px, 11.56vw, 46px);
   z-index: 1;
   position: relative;
   display: block;
   margin-bottom: 16px;
   text-align: center;
-  letter-spacing: -1.2px;
-  line-height: 60px;
+  line-height: 40px;
 }
 .title--40 {
   font-weight: 400;
@@ -963,9 +965,9 @@ template {
   letter-spacing: -1.05px;
 }
 .title--32 {
-  font-size: clamp(22px, 6.9vw, 32px);
+  font-size: clamp(20px, 6.9vw, 47px);
   margin-bottom: 21px;
-  line-height: 41px;
+  line-height: clamp(41px, 12vw, 51px);
 }
 .title--30 {
   font-size: clamp(21px, 1.4rem, 30px);
@@ -1131,7 +1133,8 @@ template {
     padding-top: 118px;
   }
   .room-section__container {
-    text-align: center;
+    flex-direction: column;
+    max-width: 100%;
   }
   .room-section__target-container {
     max-width: 370px;
@@ -1143,8 +1146,11 @@ template {
   .room-section--2 {
     max-width: 1170px;
     margin: auto;
-    padding-left: 0px;
+    padding-left: 20px;
     padding-right: 0px;
+  }
+  .room-section--2 h2 {
+    font-size: 2.5rem;
   }
   .room-section--2__container {
     display: flex;
@@ -1377,18 +1383,19 @@ input {
   font-weight: bold;
 }
 .form--3 input {
-  color: white;
+  color: #686868;
   margin-top: 24px;
   margin-bottom: 30px;
   width: 100%;
   background-color: transparent;
   outline: none;
   border: none;
-  border-bottom: 2px solid #FFFFFF;
+  border-bottom: 2px solid #BEAD8E;
   padding: 10px;
   display: flex;
   flex-direction: row-reverse;
   gap: 10px;
+  filter: contrast(0%) sepia(100%);
 }
 
 @media (min-width: 1000px) {
@@ -1512,6 +1519,9 @@ input {
   width: 100%;
   max-height: 162px;
   object-fit: cover;
+}
+.section-offers__old-price {
+  color: #BEAD8E;
 }
 .section-offers__old-price span:nth-of-type(1) {
   line-height: 25px;
@@ -1731,7 +1741,7 @@ input {
   margin-bottom: 24px;
 }
 .footer__subtitle {
-  font-size: clamp(20px, 5.675vw, 24px);
+  font-size: 1.0625rem;
 }
 .footer__columns-container {
   margin-top: 24px;
@@ -1819,6 +1829,9 @@ input {
   display: flex;
   flex-direction: column;
 }
+.swiper-pagination-bullet-active {
+  background-color: #BEAD8E !important;
+}
 .swiper--room img {
   max-height: 244px;
   max-width: 600px;
@@ -1828,6 +1841,11 @@ input {
 }
 .swiper--food {
   margin-top: 60px;
+  padding-bottom: 10px !important;
+}
+.swiper--food .swiper-pagination {
+  position: relative !important;
+  top: 10px;
 }
 .swiper--food img {
   height: clamp(220px, 68.75vw, 300px);
@@ -1907,9 +1925,6 @@ input {
   }
   .swiper--room .swiper-slide-active .room-section__icon-list, .swiper--room .swiper-slide-active .room-section__container {
     display: flex;
-  }
-  .swiper--room .swiper-slide-active .room-section__container {
-    flex-direction: column;
   }
   .swiper--room .room-section__img {
     max-height: 500px;
@@ -2020,6 +2035,10 @@ ul {
 .bg--golden {
   background-image: linear-gradient(135deg, hsl(39deg, 27%, 65%) 0%, hsl(38deg, 25%, 72%) 4%, hsl(38deg, 24%, 78%) 8%, hsl(37deg, 23%, 84%) 12%, hsl(37deg, 22%, 90%) 16%, hsl(37deg, 22%, 95%) 20%, hsl(0deg, 0%, 100%) 24%, hsl(0deg, 0%, 100%) 28%, hsl(0deg, 0%, 100%) 32%, hsl(0deg, 0%, 100%) 36%, hsl(0deg, 0%, 100%) 39%, hsl(0deg, 0%, 100%) 43%, hsl(0deg, 0%, 100%) 48%, hsl(0deg, 0%, 100%) 53%, hsl(0deg, 0%, 100%) 58%, hsl(0deg, 0%, 100%) 62%, hsl(0deg, 0%, 100%) 66%, hsl(0deg, 0%, 100%) 71%, hsl(0deg, 0%, 100%) 75%, hsl(37deg, 22%, 95%) 79%, hsl(37deg, 22%, 90%) 83%, hsl(37deg, 23%, 84%) 87%, hsl(38deg, 24%, 78%) 92%, hsl(38deg, 25%, 72%) 96%, hsl(39deg, 27%, 65%) 100%);
   color: #000000;
+}
+
+.text-gold {
+  color: #BEAD8E;
 }
 
 .room-details-img {

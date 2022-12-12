@@ -115,10 +115,14 @@
         //width: 61%;
         padding-top:118px;
         padding-bottom: 120px;
+        &__restaurant-subcontainer{
+            .title--32{
+                font-size: clamp(27px, 2.7vw, 34px);
+            }
+        }
         &--desktop{
             display: flex;
             gap:30px;
-            
         }
         &__icon-subcontainer--desktop{
             display: flex;

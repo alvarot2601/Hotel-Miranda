@@ -6,6 +6,10 @@
   //height: fit-content;
   display: flex;
   flex-direction: column;
+ 
+  &-pagination-bullet-active{
+    background-color: #BEAD8E!important;
+  }
   &-slide {
     //height: clamp(244px, 76.25vw, 500px);
   }
@@ -20,6 +24,11 @@
   }
   &--food {
     margin-top: 60px;
+    padding-bottom:10px!important;
+    .swiper-pagination{
+      position: relative!important;
+      top:10px;
+    }
     img{
       height: clamp(220px, 68.75vw, 300px);
       max-width: 600px;
@@ -100,9 +109,6 @@
     display: none!important;
   }
   .swiper--room {
-    .swiper-wrapper{
-      
-    }
     .swiper-slide{
       width: 40%;
       .room-section__icon-list, .room-section__container{
@@ -114,7 +120,7 @@
         display: flex;
       }
       .room-section__container{
-        flex-direction: column;
+        //flex-direction: column;
       }
     }
     .room-section__img{

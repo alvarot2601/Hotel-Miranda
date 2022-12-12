@@ -55,18 +55,19 @@ input{
             font-weight: bold;
         }
         input{
-            color:white;
+            color:#686868;
             margin-top: 24px;
             margin-bottom:30px;
             width:100%;
             background-color: transparent;
             outline: none;
             border:none;
-            border-bottom: 2px solid #FFFFFF;
+            border-bottom: 2px solid #BEAD8E;
             padding:10px;
             display: flex;
             flex-direction: row-reverse;
             gap:10px;
+            filter: contrast(0%) sepia(100%);
         }
     }
 }
