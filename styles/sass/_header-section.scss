@@ -15,8 +15,13 @@
 @media (min-width: 1000px) {
     .header-section{
         padding:158px 0px 0px 0px;
+        &--1{
+            padding-top: 178px;
+            padding-bottom: 123px;
+        }
         &__container{
             max-width: 1170px;
+            width: 90%;
             margin: auto;
             min-height: 195px;
             position: relative;

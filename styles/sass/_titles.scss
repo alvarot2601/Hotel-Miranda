@@ -1,14 +1,13 @@
 .title{
     @include general-title;
     //cambiar max
-    font-size:clamp(39px, 12.1875vw, 50px);
+    font-size:clamp(30px, 11.56vw, 46px);
     z-index: 1;
     position: relative;
     display: block;
     margin-bottom:16px;
     text-align: center;
-    letter-spacing: -1.2px;
-    line-height: 60px;
+    line-height: 40px;
     &--40{
         font-weight: 400;
         font-size:clamp(22px, 6.9vw, 32px);
@@ -17,9 +16,9 @@
         letter-spacing: -1.05px;
     }
     &--32{
-        font-size:clamp(22px, 6.9vw, 32px);
+        font-size:clamp(20px, 6.9vw, 47px);
         margin-bottom:21px;
-        line-height:41px;
+        line-height:clamp(41px, 12vw, 51px);
     }
     &--30{
         font-size:clamp(21px, 1.4rem, 30px);
@@ -27,7 +26,7 @@
         line-height: 30px;
     }
     &--28{
-        font-size: clamp(19.5px, 5.09vw , 36px);
+        font-size: clamp(19.5px, 5.09vw , 22.4px);
         line-height: 24px;
     }
     &--24{
@@ -58,7 +57,7 @@
         text-align: left;
     }
     &--border{
-        border-bottom: 1px solid black;
+        border-bottom: 1px solid #F1F1F1;
         padding-bottom: 13px;
     }
 }

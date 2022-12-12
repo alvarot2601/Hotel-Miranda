@@ -22,13 +22,31 @@
         background-color: $fifth-color;
     }
     &__container::before{
-        content: url('../../assets/icons/01-dark.svg');
+        
         position: absolute;
         top:20px;
         right: 32px;
     }
-    &__container--light::before{
+    &__container--1::before{
         content: url('../../assets/icons/01.svg');
+    }
+    &__container--2::before{
+        content: url('../../assets/icons/02.svg');
+    }
+    &__container--3::before{
+        content: url('../../assets/icons/03.svg');
+    }
+    &__container--4::before{
+        content: url('../../assets/icons/04.svg');
+    }
+    &__container--5::before{
+        content: url('../../assets/icons/05.svg');
+    }
+    &__container--6::before{
+        content: url('../../assets/icons/06.svg');
+    }
+    &__row{
+        display: none;
     }
 }
 @media screen and (min-width:1000px)
@@ -41,12 +59,15 @@
         &__row{
             display: flex;
             justify-content: space-around;
-            gap:clamp(2px, 1vw, 30px);
+            gap:30px;
+            width: 90%;
+            margin:auto;
+            max-width: 1170px;
         }
         &__container{
-            min-width: 300px;
-            width: clamp(300px, 30vw, 370px);
-            max-width: 370px;
+            min-width: clamp(300px, 30vw, 370px);
+            width: 100%;
+            max-width: 300px;
             height: 370px;
             padding:60px 57px 43px 30px;
             justify-content: center;

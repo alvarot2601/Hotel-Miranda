@@ -1,6 +1,8 @@
 .founder-card{
     padding:60px 26px 41px 26px;
+   
     text-align: center;
+    box-shadow: 0px 14px 24px rgba(190, 173, 142, 0.27);
     &__img-container{
         position: relative;
         margin:auto;
@@ -25,5 +27,12 @@
         position: absolute;
         top:18px;
         right:16px;
+    }
+}
+@media screen and (min-width:1000px)
+{
+    .founder-card{
+        margin-left:20px;
+        max-width: 376px;
     }
 }

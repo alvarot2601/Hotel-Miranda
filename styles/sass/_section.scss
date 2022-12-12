@@ -9,6 +9,10 @@
         margin:auto;
         display: block;
     }
+    &--amenities{
+        padding-top:60px;
+        padding-bottom: 0px;
+    }
     &__60{
         padding-top:60px;
         padding-bottom: 0px;
@@ -31,7 +35,13 @@
         height: 270px;
         iframe{
             width: 100%;
+            margin:32px 0px;
             height: 100%;
+        }
+    }
+    &__container{
+        iframe{
+            margin-bottom: 36px;
         }
     }
     &__icon-container{
@@ -51,6 +61,9 @@
         width:clamp(130px, 40.6vw, 158px);
         height:clamp(130px, 40.6vw, 158px);
     }
+    &__icon-subcontainer--desktop{
+        display: none;
+    }
     &__icon-subcontainer--dark{
         background-color: #BEAD8E;
         color:#FFFFFF;
@@ -63,7 +76,6 @@
         gap:32px;
         h3{
             margin:22px 0px;
-            font-size: clamp(36px, 11.25vw, 72px);
         }
         img{
             min-height: 14.5rem;
@@ -94,14 +106,44 @@
         flex-direction: column;
         gap:0px;
     }
+    &--desktop{
+        display: none;
+    }
 }
 @media (min-width: 1000px) {
     .section{
         //width: 61%;
         padding-top:118px;
         padding-bottom: 120px;
+        &__restaurant-subcontainer{
+            .title--32{
+                font-size: clamp(27px, 2.7vw, 34px);
+            }
+        }
+        &--desktop{
+            display: flex;
+            gap:30px;
+        }
+        &__icon-subcontainer--desktop{
+            display: flex;
+        }
+        &__container{
+            max-width: 1170px;
+            margin: auto;
+        }
         &--48{
             padding-top:68px;
+        }
+        &__60{
+            padding: 47px 50px 47px 50px;
+            max-width: 770px;
+            margin-top:86px;
+        }
+        &__related-rooms{
+            padding:0px;
+            margin-top:74px;
+            max-width: 770px;
+            margin-left:20px;
         }
         .form--3{
             margin:auto;
@@ -115,6 +157,7 @@
             flex-direction: row!important;
             padding: 40px 42px;
             gap:57px;
+            box-shadow: 0px 14px 24px rgba(184, 184, 184, 0.1);
             img{
                 width: 50%;
                 object-fit: cover;
@@ -143,8 +186,10 @@
         }
         &--about-us{
             position: relative;
-            padding-bottom:0px;
-            
+            padding-bottom:120px;
+            .little-title{
+                z-index: 1;
+            }
             &__container{
                 margin:auto;
                 max-width: 1170px;
@@ -160,7 +205,7 @@
             }
             &__rectangle{
                 position: absolute;
-                top:232px;
+                top:310px;
                 right: 0px;
                 height: 610px;
                 width: 56.45%;
@@ -173,6 +218,7 @@
         }
         &--intro-video{
             position: relative;
+            padding: 130px 0px 133px 0px;
             &__background-1
             {
                 width: 70.1%;
@@ -190,7 +236,9 @@
             }
             &__container
             {
-                height: 100%;
+                width: 90%;
+                max-width: 1170px;
+                margin:auto;
                 display: flex;
                 flex-direction: row;
                 justify-content: space-around;
@@ -200,7 +248,7 @@
             
             &__info-container{
                 width: 50%;
-                min-width: clamp(570px, 50.7vw, 688px);
+                
             }
         }
         &__iframe-container{
@@ -215,11 +263,19 @@
             justify-content: center;
             iframe{
                 max-height: clamp(300px , 30vw,460px);
-
+                min-height: 300px;
             }
         }
+        &--amenities{
+            max-width: 1170px;
+            margin:auto;
+            padding:0px;
+        }
+        &__amenities-container{
+            padding: 47px 49px 52px 49px;
+            max-width: 770px;
+        }
         .btn--desktop{
-            display: block;
             margin-top:23px;
         }
         .btn--mobile{

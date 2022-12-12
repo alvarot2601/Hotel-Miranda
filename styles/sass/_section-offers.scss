@@ -12,6 +12,7 @@
         object-fit: cover;
     }
     &__old-price{   
+        color: #BEAD8E;
         span:nth-of-type(1){
             line-height: 25px;
             font-size:23px;
@@ -63,10 +64,12 @@
         gap:60px;
         &__card{
             margin: auto;
+            width: 100%;
             max-width: 1170px;
         }
         &__img{
             max-height: 570px;
+            
         }
         &__info-container{
             width: 89.74%;

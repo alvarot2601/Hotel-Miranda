@@ -33,13 +33,14 @@
               class="inactive"
             />
             <img class="header__h" src="assets/icons/H.svg" alt="" />
-            <img
+            <a href="./index.html">
+              <img
               class="header__logo"
               src="assets/icons/wordmark.svg"
               alt="Logo of the website"
-            />
+              />
+            </a>
           </li>
-
           <li class="header__li">
             <img
               class="header__icon header__icon--2"
@@ -67,6 +68,41 @@
             <a href="./contact.html">Contact</a>
           </li>
         </ul>
+        <div class="header__container-desktop">
+          <p class="header__p-desktop">We Make You Feel Comfortable</p>
+          <ul class="header__ul--desktop">
+            <li>
+              <div>
+                <img class="header__h" src="assets/icons/H.svg" alt="" />
+                <a href="./index.html"> 
+                  <img
+                    class="header__logo"
+                    src="assets/icons/wordmark-desktop.svg"
+                    alt="Logo of the website"
+                  />
+              </a>
+              </div>
+              <div>
+                <a href="./about.html">About us</a>
+                <a href="./rooms.html">Rooms</a>
+                <a href="./offers.html">Offers</a>
+                <a href="./contact.html">Contact</a>
+              </div>
+            </li>
+            <li>
+              <img
+                class="header__icon header__icon--2"
+                src="assets/icons/user-icon.svg"
+                alt="User icon"
+              />
+              <img
+                class="header__icon header__icon--3"
+                src="assets/icons/search-icon.svg"
+                alt="Search icon"
+              />
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
     <main>
@@ -148,9 +184,9 @@
             placeholder="Your full name"
             required
           />
-          <input type="number" placeholder="Add phone number" required />
-          <input type="number" placeholder="Enter email address" required />
-          <input type="number" placeholder="Enter subject" required />
+          <input type="tel" placeholder="Add phone number" required />
+          <input type="email" placeholder="Enter email address" required />
+          <input type="text" placeholder="Enter subject" required />
           <textarea placeholder="Enter message"></textarea>
           <button class="btn" type="submit">SEND</button>
         </form>
